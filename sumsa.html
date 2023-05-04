@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SUMSA</title>
+
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-flat.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-metro.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+    @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css");
+
+    html {
+      scroll-behavior: smooth
+    }
+
+    body {
+      background: linear-gradient(to right, #1c92d2, #f2fcfe);
+    }
+
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Lato", sans-serif
+    }
+
+    .w3-bar,
+    h1,
+    button {
+      font-family: "Montserrat", sans-serif
+    }
+
+    .fa-anchor,
+    .fa-coffee {
+      font-size: 200px
+    }
+
+    .mySlides {
+      display: none
+    }
+
+    .w3-tag,
+    .fa {
+      cursor: pointer
+    }
+
+    .w3-tag {
+      height: 15px;
+      width: 15px;
+      padding: 0;
+      margin-top: 6px
+    }
+
+    .bgimg-1,
+    .bgimg-2,
+    .bgimg-3 {
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      transition: 0.5s;
+
+    }
+
+    .parallax {
+      background-image: url("medschool.jpg");
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      min-height: 1000px;
+      opacity: 0.8;
+
+
+    }
+
+    .parallax2 {
+      background-image: url("pexels-2.jpg");
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      min-height: 1000px;
+      opacity: 0.9;
+
+
+    }
+
+    .parallax3 {
+      background-image: url("SUHall.jpg");
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      min-height: 400px;
+      opacity: 0.7;
+
+
+    }
+
+    .parallax4 {
+      background-image: url("sums-histo.jpg");
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      min-height: 1000px;
+      opacity: 0.7;
+
+
+    }
+
+    .intro-txt {
+      font-family: "Oswald";
+    }
+
+    .fade {
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    .reveal {
+      position: relative;
+      transform: translateY(150px);
+      opacity: 0;
+      transition: 1s all ease;
+    }
+
+    .reveal.active {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    .animate-charcter {
+      text-transform: uppercase;
+      background-image: linear-gradient(-225deg,
+          #231557 10%,
+          #44107a 59%,
+          #ff1361 67%,
+          #fff800 100%);
+      background-size: auto auto;
+      background-clip: border-box;
+      background-size: 200% auto;
+      color: #fff;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: textclip 2s linear infinite;
+      display: block;
+      font-size: 30px;
+    }
+
+    .sums-gradient {
+      background: linear-gradient(to right, #e22f47, #45a247);
+    }
+
+    .sums-fade::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 100px;
+      background: linear-gradient(to top, rgb(139, 195, 248), transparent);
+      z-index: 1000;
+      display: flex;
+    }
+
+    .sums-fade-top::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100px;
+      background: linear-gradient(to top, rgb(139, 195, 248), transparent);
+      z-index: 1001;
+      display: flex;
+    }
+
+    @keyframes textclip {
+      to {
+        background-position: 200% center;
+      }
+    }
+
+    @keyframes fade {
+      from {
+        opacity: .7
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    @keyframes typing {
+      from {
+        width: 0
+      }
+
+      to {
+        width: 100%
+      }
+    }
+
+    @keyframes blinking {
+      0% {
+        border-color: transparent
+      }
+
+      50% {
+        border-color: rgb(255, 253, 253)
+      }
+
+      100% {
+        border-color: transparent
+      }
+    }
+
+    @media (max-width: 4000px) {
+      .showcase {
+        top: 20%;
+      }
+    }
+
+    @media (max-width: 990px) {
+      .showcase {
+        top: 10%;
+      }
+    }
+
+    @media (max-width: 800px) {
+      .parallax3 {
+
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 800px;
+        opacity: 0.5;
+      }
+
+      .parallax {
+
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 700px;
+        opacity: 0.8;
+
+
+      }
+    }
+
+    @media (max-width: 600px) {
+      .parallax3 {
+        background-image: url("SUHall.jpg");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 900px;
+        opacity: 0.5;
+
+
+      }
+    }
+
+    @media (max-width: 1400px) {
+      .showcase {
+        top: 10%;
+      }
+    }
+
+    @media (max-width: 360px) {
+      .showcase {
+        top: 15%;
+      }
+    }
+  </style>
+
+</head>
+<body>
+    <div class="w3-top w3-center" style="z-index: 20000;">
+    <div class="container w3-center">
+      <div class="container w3-card w3-center w3-text-white sums-gradient" style="max-width: 500px; margin-top: 20px;">
+        <a class="w3-bar-item w3-button w3-hide-large w3-right w3-padding w3-hover-black w3-large "
+          href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+        <a href="sums-main-v1.html" class="w3-bar-item w3-button w3-padding-large"><i class="bi bi-house"></i>Home</a>
+        <button onclick="document.getElementById('id01').style.display='block'"
+          class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-padding-large w3-hover-green" style="transition: 0.3s;"><i
+            class="bi bi-card-checklist"></i>Admission</button>
+        <!-- <a href="sums-main-v1.html#About" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-padding-large w3-hover-green"
+          style="transition: 0.3s;">About</a>
+  
+        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-padding-large w3-hover-green"
+          style="transition: 0.3s;">News</a>
+        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-padding-large w3-hover-green"
+          style="transition: 0.3s;">Events</a>
+          <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-padding-large w3-hover-green"
+          style="transition: 0.3s;">Contact</a>
+          <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-padding-large w3-hover-green"
+          style="transition: 0.3s;">SUMSA</a> -->
+      </div>
+    </div>
+    </div>
+    
+
+
+
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-red w3-hide w3-hide-large w3-large">
+      <button onclick="document.getElementById('id01').style.display='block'"
+        class="w3-bar-item w3-button w3-hover-green" style="transition: 0.3s;"><i
+          class="bi bi-card-checklist"></i>Admission</button>
+      <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
+      <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
+      <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 4</a>
+    </div>
+  </div>
+
+  <!-- Modal: Admission -->
+  <div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-4">
+      <header class="w3-container sums-gradient">
+        <span onclick="document.getElementById('id01').style.display='none'"
+          class="w3-button w3-display-topright">&times;</span>
+        <h2>ADMISSION REQUIREMENTS</h2>
+      </header>
+      <div class="w3-container">
+        <p>1. Must be a holder of any baccalaureate degree with GWAG (General Weighted Average Grade) of at least 85% or
+          its equivalent (for SU graduate, at least 2.5 QPA). Applicant must have taken the National Medical Admission
+          Test (NMAT) with percentile rank of 60 or above with the validity of two (2) years. Application of qualified
+          students must be submitted to the Medical School starting March 2023 (thru e-mail sums@su.edu.ph). Deadline of
+          submission is June 30, 2023.</p>
+        <p>2. Must submit to the Medical School the following requirements as scanned copies from the original file
+          (List can be viewed at su.edu.ph under ‘Registrar & Admissions – Admission Procedures’):</p>
+        <p> <i> *E-MAIL THESE AS <span style="color: red;">ONE-PDF FILE</span> FOLLOWING THE ORDER OF THE REQUIREMENTS
+            AS LISTED BELOW.</i></p>
+        <p>*All documents must be in PORTRAIT format.</p>
+        <p>PDF File name format: FAMILY NAME(in caps), Given Name MIDDLE NAME(in caps)</p>
+        <p>a. Duly accomplished Application Form with latest passport-size picture (can be downloaded from the
+          University website su.edu.ph under ‘Registrar & Admissions – Admission Procedures’)</p>
+        <p>b. Official Transcript of Records showing completion of a degree course and GWAG (General Weighted Average
+          Grade) of at least 85% or its equivalent (for SU graduate, at least 2.5 QPA). Attach an Honorable
+          Dismissal/Transfer Credential if not a graduate of Silliman University.
+          *For graduate of private schools, the transcript of record is validated by a Special Order from CHED. While
+          graduate of public schools, authenticated copy of diploma or certificate of graduation must be presented.</p>
+        <p>c. Certificate of percentage equivalent of GWAG (General Weighted Average Grade) of 85% or above from the
+          Registrar’s Office if not a graduate of Silliman University</p>
+        <p>d. NMAT Official Result with percentile rank of 60 or above (Secure 2 original copies – 1 for SU and 1 for
+          personal file for PRC Board Exam use)
+          *This must be the official copy of the result which they mail to the examinees. The electronic copy of NMAT
+          result will NOT be accepted.</p>
+        <p>e. Certificates of recommendation from two (2) professors in college
+          Addressee: Dr. Walden R. Ursos
+          Dean
+          Silliman University Medical School (SUMS)
+          Dumaguete City, Negros Oriental</p>
+        <p>f. 3 Screenings of Hepatitis (any laboratory):
+          Hepatitis B Surface Antigen Result
+          Antibody to Hepatitis B s Antigen Result
+          Total Antibody to HB c Antigen Result</p>
+        <p>g. Psychological Exam Result (any office/clinic)
+          * Also available at the Silliman University Guidance and Testing Center (please refer to “Psychological Test
+          Procedure” below).
+          Contact E-mail: sumsguidance@su.edu.ph</p>
+        <p>h. Birth certificate issued by the NSO / PSA</p>
+        <p>g. Barangay Clearance</p>
+        <p>j. Recommendation letter from latest employer with the Company letterhead and contact details (if with
+          Employment History)
+          Addressee: Dr. Walden R. Ursos
+          Dean
+          Silliman University Medical School (SUMS)
+          Dumaguete City, Negros Oriental</p>
+        <p>k. COVID-19 Vaccination card/s (primary doses given, then include card for booster dose if given)
+          *Only those with COMPLETE requirements will be evaluated. The deadline of submission is June 30, 2023.</p>
+        <p>3. Must undergo an interview with the Admissions Committee as soon as requirements for admission are
+          complied.
+          A Face-to-Face interview will be conducted for residents within Negros Oriental. On the other hand, residents
+          outside Negros Oriental will have an online interview.</p>
+        <p>The following students are not encouraged to apply:
+          NMAT less than 60 percentile rank and GWAG of less than 85 percent
+          No NMAT result
+          Those who failed in another medical school
+          Application for lateral entry in any year level</p>
+
+
+
+      </div>
+      <footer class="w3-container w3-green">
+        <p>Modal Footer</p>
+      </footer>
+    </div>
+  </div>
+  <!-- log in form -->
+
+  <!-- <div class="w3-modal" id="sign-in">
+    <div class="w3-modal-content w3-animate-top w3-card-1">
+      <header class="w3-container w3-red">
+        <h2>SIGN-IN TO STUDENTS AND FACULTY PORTAL</h2>
+        <span onclick="document.getElementById('sign-in').style.display='none'"
+          class="w3-button w3-display-topright">&times;</span>
+      </header>
+      <div class="w3-col">
+        <form class="w3-container w3-card-4 w3-padding-16 w3-white" action="/form.html" target="_blank">
+          <div class="w3-section">
+            <label>Email</label>
+            <input class="w3-input" type="text" name="Email" required>
+          </div>
+          <div class="w3-section">
+            <label>Password</label>
+            <input class="w3-input" type="password" name="Password" required>
+          </div>
+          <div class="w3-section">
+              <label>Message</label>
+              <input class="w3-input" type="text" name="Message" required>
+            </div>
+          <input class="w3-check" type="checkbox" checked name="Like">
+            <label>I Like it!</label>
+          <button type="submit" class="w3-button w3-right w3-theme">Sign-in</button>
+        </form>
+      </div>
+    </div>
+  </div> -->
+
+  <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="medschool3.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block text-white" style="background-color: rgba(0, 0, 0, 0.5);">
+          <h5>First slide label</h5>
+          <p>Some representative placeholder content for the first slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="sound.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block text-white" style="background-color: rgba(0, 0, 0, 0.5);">
+          <h5>First slide label</h5>
+          <p>Some representative placeholder content for the first slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="our faculty.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block text-white" style="background-color: rgba(0, 0, 0, 0.5);">
+          <h5>First slide label</h5>
+          <p>Some representative placeholder content for the first slide.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true" ></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  
+
+  <!-- Typing animation source -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+  <script>
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function myFunction() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else {
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) { myIndex = 1 }
+      x[myIndex - 1].style.display = "block";
+      setTimeout(carousel, 4000);
+    }
+
+    // Slideshow
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+
+    function currentDiv(n) {
+      showDivs(slideIndex = n);
+    }
+
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demodots");
+      if (n > x.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = x.length };
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace("w3-white", "");
+      }
+      x[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " w3-white";
+    }
+  </script>
+
+  <!-- Typewriter effect -->
+  <script>
+    var typed = new Typed(".auto-type", {
+      strings: ["", "Competence", "Character", "Faith"],
+      typeSpeed: 60,
+      backSpeed: 60,
+      loop: true
+    });
+
+    // Scroll effect
+    function reveal() {
+      var reveals = document.querySelectorAll(".reveal");
+
+      for (var i = 0; i < reveals.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTop = reveals[i].getBoundingClientRect().top;
+        var elementVisible = 150;
+
+        if (elementTop < windowHeight - elementVisible) {
+          reveals[i].classList.add("active");
+        } else {
+          reveals[i].classList.remove("active");
+        }
+      }
+    }
+
+    window.addEventListener("scroll", reveal);
+  </script>
+  <script>
+    $(document).ready(function () {
+      $("#myModal").modal('show');
+    });
+  </script>
+
+</body>
+</html>

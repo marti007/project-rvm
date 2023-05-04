@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    * { box-sizing: border-box; }
+    body{
+      background-color: lightslategray;
+    }
+    div {
+        padding: 10px;
+        background-color: lightslategray;
+        overflow: hidden;
+    }
+    input[type=text], textarea, select {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    input[type=button]{ 
+        width: auto;
+        float: right;
+        cursor: pointer;
+        padding: 7px;
+    }
+</style>
+</head>
+<body>
+  <div>
+    <!--Add few elements to the form-->
+    <div><input type="text" id="txtName" placeholder="Enter your name" /></div>
+    <div><input type="text" id="idNumber" placeholder="Enter ID Number" /></div>
+    <div><input type="text" id="txtAge" placeholder="Enter your age" /></div>
+    <div><input type="text" id="txtEmail" placeholder="Enter your email address" /></div>
+    <div>
+        <select id="selCountry">
+            <option selected value="">-- Choose the country --</option>
+            <option value="India">India</option>
+            <option value="Japan">Japan</option>
+            <option value="USA">USA</option>
+        </select>
+    </div>
+    <div>
+        <textarea id="msg" name="msg" placeholder="Write some message ..." style="height:100px"></textarea>
+        <input type="text" name="filename" id="fileName">
+    </div>
+
+    <!--Add a button to save the data.-->
+    <div>
+        <input type="button" id="bt" value="Save data to file" onclick="saveFile()" />
+        <input type="button" id="addData" value="Add to Database"/>
+
+        <button  onclick="displayText()"> Display Data</button>
+    </div>
+    <div>
+      <p id="content">
+      </p>
+    </div>
+</div>
+
+
+
+
+</body>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+import { getDatabase, ref, set } from "firebase/database";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyBimR1B6mynq5lfk3cPBhbM9vPQV_rEPhM",
+  authDomain: "project-sums.firebaseapp.com",
+  databaseURL: "https://project-sums-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "project-sums",
+  storageBucket: "project-sums.appspot.com",
+  messagingSenderId: "206541240666",
+  appId: "1:206541240666:web:55602daf0349edc0f61b63",
+  measurementId: "G-4LM652RNY3"
+};
+
+// Initialize Firebase
+const database = getDatabase(app);
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+
+
+</script>
+
+
+<script src="connect.js"></script>
+
+
+<script>
+  let saveFile = () => {
+    
+      // Get the data from each element on the form.
+    const name = document.getElementById('txtName');
+      const age = document.getElementById('txtAge');
+      const email = document.getElementById('txtEmail');
+      const country = document.getElementById('selCountry');
+      const msg = document.getElementById('msg');
+      const fileName = document.getElementById('fileName')
+      // This variable stores all the data.
+      let data = 
+          '\r Name: ' + name.value + ' \r\n ' + 
+          'ID Number: ' +idNumber.value + ' \r\n ' + 
+          'Age: ' +age.value + ' \r\n ' + 
+          'Email: ' + email.value + ' \r\n ' + 
+          'Country: ' + country.value + ' \r\n ' + 
+          'Message: ' + msg.value;
+      
+      // Convert the text to BLOB.
+      const textToBLOB = new Blob([data], { type: 'text/plain' });
+      const sFileName = fileName.value;	   // The file to save the data.
+
+      let newLink = document.createElement("a");
+      newLink.download = sFileName;
+
+      if (window.webkitURL != null) {
+          newLink.href = window.webkitURL.createObjectURL(textToBLOB);
+      }
+      else {
+          newLink.href = window.URL.createObjectURL(textToBLOB);
+          newLink.style.display = "none";
+          document.body.appendChild(newLink);
+      }
+
+      newLink.click(); 
+      
+  }
+
+  function displayText(){
+    let message = document.querySelector("#content");
+    message.innerHTML = 
+          'Name: ' + txtName.value + ' <br> ' + 
+          
+          'Age: ' +txtAge.value + ' <br> ' + 
+          'Email: ' + txtEmail.value + ' <br> ' + 
+          'Country: ' + selCountry.value + ' <br> ' + 
+          'Message: ' + msg.value;
+    
+  }
+</script>
+
+
+
+
+</html>
