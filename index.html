@@ -725,20 +725,22 @@
       <div class="col justify-content-center" style="margin-top: 2%; margin-bottom: 2%;">
         <div class="col w3-container justify-content-center pt-5 reveal" >
           <div class="row justify-content-center ">
-            <div class="col-md-2 w3-red text-center shadow-lg" style="min-height: 100px; padding-top: 1%;">
-              <h1 class="w3-animate-left">VISION</h1>
-              <h1 style="font-size: 60px"><i class="bi bi-eye"></i></h1>
-            </div>
-            <div class="col-md-6 text-center bg-secondary text-white shadow-lg "
-              style="min-height: 100px; padding-top: 2%; padding-bottom: 2%;">
-              <h5>To become the leading institution in the region in providing quality medical education
-                committed to produce competent physicians who are guided by Christian principles in the provision of
-                excellent health care.</h5>
-            </div>
+              <div class="col-md-2 w3-red text-center " style="min-height: 100px; padding-top: 1%;">
+                <h1 class="w3-animate-left">VISION</h1>
+                <h1 style="font-size: 60px"><i class="bi bi-eye"></i></h1>
+              </div>
+              <div class="col-md-6 text-center bg-secondary text-white "
+                style="min-height: 100px; padding-top: 2%; padding-bottom: 2%; 
+                box-shadow: rgba(0, 0, 0, 0.45) 12.4px 12.4px 13.2px;">
+                <h5>To become the leading institution in the region in providing quality medical education
+                  committed to produce competent physicians who are guided by Christian principles in the provision of
+                  excellent health care.</h5>
+              </div>
+  
           </div>
           <div class="row justify-content-center mt-5 reveal">
             <div class="col-lg-6 text-center w3-center bg-secondary text-white"
-              style="min-height: 100px; padding-top: 2%; padding-bottom: 2%;">
+              style="min-height: 100px; padding-top: 2%; padding-bottom: 2%;  box-shadow: rgba(65, 65, 65, 0.4) -5px 5px, rgba(60, 60, 60, 0.3) -10px 10px, rgba(50, 50, 50, 0.2) -15px 15px, rgba(40, 40, 40, 0.1) -20px 20px, rgba(30, 30, 30, 0.05) -25px 25px;">
               <h5>To produce medical graduates [a] who can excel in any of the responsible roles as health providers,
                 teachers, researchers, administrators, and social mobilizers in the Philippine health care system; [b]
                 who
@@ -1627,11 +1629,7 @@
   </script>
   <!-- PRELOADER -->
   <script>
-    // var loader = document.getElementById("preloader");
 
-    // window.addEventListener("load", function () {
-    //   loader.style.display = "none";
-    // }); 
 
     function fadeOutEffect() {
     var fadeTarget = document.getElementById("preloader");
@@ -1641,13 +1639,31 @@
         }
         if (fadeTarget.style.opacity > 0) {
             fadeTarget.style.opacity -= 0.05;
-        } else {
-            clearInterval(fadeEffect);
+        }
+        else {
+            fadeTarget.style.display = "none";
         }
     }, 30);
 }
 window.addEventListener('load', fadeOutEffect);
+
+// function loadOut() {
+//   var loadoutTarget = document.getElementById("preloader");
+//   var loadoutEffect = setInterval(function () {
+//       if (loadoutTarget.style.opacity = 0){
+
+//       }
+//   });
+// }
   </script>
+
+  <!-- <script>
+    var loader = document.getElementById("preloader");
+    window.addEventListener("load", function () {
+      loader.style.display = "none";
+    }); 
+
+  </script> -->
 
 <!-- TEXT EFFECT -->
   <script>
