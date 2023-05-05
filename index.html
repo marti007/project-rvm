@@ -132,9 +132,9 @@
 
     .reveal {
       position: relative;
-      transform: translateY(50px);
+      transform: translateY(100px);
       opacity: 0;
-      transition: 1.5s all ease;
+      transition: 2s all ease;
     }
 
     .reveal.active {
@@ -675,7 +675,7 @@
       </div>
       <div class="container-fluid">
         <h1 class="w3-xxlarge w3-hide-small w3-hide-medium w3-wide w3-animate-opacity w3-row-padding"
-          style="margin-top: 15px;">
+          style="margin-top: 15px; white-space:nowrap;">
           <span class="w3-gray w3-padding"><span class="w3-xxxlarge" style="color: red;">S</span>ILLIMAN <span
               class="w3-xxxlarge" style="color: red;">U</span>NIVERSITY</span>
         </h1>
@@ -721,9 +721,9 @@
     </div>
 
     <div class="w3-display-container">
-      <div class="parallax2"></div>
-      <div class="col  w3-display-topleft justify-content-center" style="margin-top: 2%;">
-        <div class="col w3-container justify-content-center pt-5 reveal" style="max-height: 950px; overflow-y: auto;">
+      <!-- <div class="parallax2"></div> -->
+      <div class="col justify-content-center" style="margin-top: 2%; margin-bottom: 2%;">
+        <div class="col w3-container justify-content-center pt-5 reveal" >
           <div class="row justify-content-center ">
             <div class="col-md-2 w3-red text-center shadow-lg" style="min-height: 100px; padding-top: 1%;">
               <h1 class="w3-animate-left">VISION</h1>
@@ -736,7 +736,7 @@
                 excellent health care.</h5>
             </div>
           </div>
-          <div class="row justify-content-center mt-5">
+          <div class="row justify-content-center mt-5 reveal">
             <div class="col-lg-6 text-center w3-center bg-secondary text-white"
               style="min-height: 100px; padding-top: 2%; padding-bottom: 2%;">
               <h5>To produce medical graduates [a] who can excel in any of the responsible roles as health providers,
@@ -752,7 +752,7 @@
               <h1 style="font-size: 60px"><i class="bi bi-rocket-takeoff"></i></h1>
             </div>
           </div>
-          <div class="row justify-content-center mt-5">
+          <div class="row justify-content-center mt-5 reveal">
             <div class="col-xl-3 bg-warning text-white text-center" style="min-height: 100px; padding-top: 2%;">
               <h1 class="w3-animate-left">PHILOSOPHY</h1>
               <h1 style="font-size: 60px"><i class="bi bi-lightbulb"></i></h1>
@@ -769,7 +769,7 @@
                 in the objectives of the School – is a commitment to excellence in the next millennium.</h5>
             </div>
           </div>
-          <div class="row justify-content-center mt-5">
+          <div class="row justify-content-center mt-5 reveal">
             <div class="col-xl-5 text-start w3-center bg-secondary text-white"
               style="min-height: 100px; padding-top: 2%; padding-bottom: 2%;">
               <li>To develop knowledgeable professionals who can define and manage the health problems of the patient,
@@ -1625,12 +1625,28 @@
       }
     }
   </script>
+  <!-- PRELOADER -->
   <script>
-    var loader = document.getElementById("preloader");
+    // var loader = document.getElementById("preloader");
 
-    window.addEventListener("load", function () {
-      loader.style.display = "none";
-    }); 
+    // window.addEventListener("load", function () {
+    //   loader.style.display = "none";
+    // }); 
+
+    function fadeOutEffect() {
+    var fadeTarget = document.getElementById("preloader");
+    var fadeEffect = setInterval(function () {
+        if (!fadeTarget.style.opacity) {
+            fadeTarget.style.opacity = 1;
+        }
+        if (fadeTarget.style.opacity > 0) {
+            fadeTarget.style.opacity -= 0.05;
+        } else {
+            clearInterval(fadeEffect);
+        }
+    }, 30);
+}
+window.addEventListener('load', fadeOutEffect);
   </script>
 
 <!-- TEXT EFFECT -->
