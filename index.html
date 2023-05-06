@@ -501,10 +501,10 @@
       height: 100%;
       margin: 0;
       line-height: 20px;
-      text-align: center;
+      text-align: left;
       z-index: 9999;
       transform: translateX(100%);
-      animation: scroll-left 20s linear infinite;
+      animation: scroll-left 35s linear infinite;
     }
 
     @keyframes scroll-left {
@@ -518,18 +518,11 @@
     }
 
     @media screen and (max-width: 360px) {
-      .sums-scroll-left p {
-        animation: scroll-left 100s linear infinite;
+      .sums-scroll-left{
+        width: 360px;
       }
-
-      @keyframes scroll-left {
-        0% {
-          transform: translateX(100%);
-        }
-
-        100% {
-          transform: translateX(-200%);
-        }
+      .sums-scroll-left p {
+        width: 910px;
       }
     }
 
