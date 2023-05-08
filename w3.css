@@ -245,4 +245,10 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
+.hover-translateY{
+  transition: 0.3s all ease;
+}
 
+.hover-translateY:hover{
+  transform: translateY(-5px);
+}
