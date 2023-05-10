@@ -333,7 +333,7 @@
     <style>
       .progress-bar {
         height: 10px;
-        background: #08b433;
+        background: #01a796;
         border: none;
         border-radius: none;
         transition: all 0.7s;
@@ -346,7 +346,7 @@
         flex-flow: column nowrap;
         justify-content: center;
         align-items: start;
-        background: #ec4040;
+        background: #ff00003f;
 
         top: 0%;
       }
@@ -467,7 +467,7 @@
     style="background: rgba(0, 0, 0, 0.25); height: 25px; z-index: 9999; position: fixed; padding: 0; backdrop-filter: blur(5px);">
     <div class="container sums-scroll-left">
       <p><span class="w3-red p-2">MAY 5, 2023:</span> SUMS DEVOTION @SUMS PHYSICIANS' HALL | <span class="w3-blue">MAY
-          5, 2023:</span> SUMS DEVOTION @SUMS PHYSICIANS' HALL | <span class="w3-green">MAY 5, 2023:</span> SUMS
+          5, 2023:</span> SUMS DEVOTION @SUMS PHYSICIANS' HALL | <span class="w3-metro-teal ">MAY 5, 2023:</span> SUMS
         DEVOTION @SUMS PHYSICIANS' HALL</p>
     </div>
   </div>
@@ -546,42 +546,44 @@
 
   <!-- NAVBAR -->
   <nav class="w3-top" style="z-index: 20000;">
-    <div class="container-fluid justify-content-center">
-      <div class="container w3-card w3-center text-white sums-gradient px-0"
-        style="width: 100%; margin-top: 25px; border-radius: 5px; height: auto; font-size: small;">
-        <button class="btn w3-hide-large w3-right w3-bar-item border border-white" type="button"
-          data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"
-          style="padding-left: 15px; padding-right: 15px; padding-top: 10px; background-color: rgba(255, 2, 2, 0.7);"><i
-            class="bi bi-menu-button-wide fs-1 text-white"></i></button>
-        <a href="index.html" class="w3-bar-item w3-button  w3-hide-small w3-hide-medium m-0 w3-hover-red"
-          style="transition: 0.7s; padding: 10px 15px 10px 15px;"><i class="bi bi-house"></i>HOME</a>
+    <div class="justify-content-center">
+      <button class="btn w3-hide-large w3-right w3-bar-item border border-white" type="button"
+      data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"
+      style="margin-top: 25px; padding-left: 15px; padding-right: 15px; padding-top: 10px; background-color: rgba(255, 2, 2, 0.7);"><i
+        class="bi bi-menu-button-wide fs-1 text-white"></i></button>
+
+      <div class="container-fluid w3-card w3-center w3-metro-teal text-center w3-hide-small w3-hide-medium"
+        style=" margin-top: 25px; height: 6vh; font-size: small;">
+        <a href="index.html"><button class="w3-bar-item w3-button  w3-hide-small w3-hide-medium m-0 w3-hover-red"
+          style="transition: 0.7s; height: 100%; width: 7%;"><i class="bi bi-house"></i>HOME</button></a>
         <button onclick="document.getElementById('id01').style.display='block'"
           class="w3-bar-item w3-button w3-hide-small w3-hide-medium  m-0 w3-hover-red"
-          style="transition: 0.7s; padding: 10px 15px 10px 15px;"><i class="bi bi-card-checklist"></i>
+          style="transition: 0.7s; height: 100%;"><i class="bi bi-card-checklist"></i>
           ADMISSION</button>
         <a href="#"><button onclick="openSect('about')"
             class="w3-bar-item w3-button w3-hide-small w3-hide-medium  m-0 w3-hover-red"
-            style="transition: 0.7s; padding: 10px 15px 10px 15px;">
+            style="transition: 0.7s; height: 100%; width: 7%;">
             ABOUT</button></a>
-        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium  m-0 w3-hover-red"
-          style="transition: 0.7s; padding: 10px 15px 10px 15px;">NEWS</a>
-        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium  m-0 w3-hover-red"
-          style="transition: 0.7s; padding: 10px 15px 10px 15px;">EVENTS</a>
-        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium  m-0 w3-hover-red "
-          style="transition: 0.7s; padding: 10px 15px 10px 15px;">SOUL</a>
+        <a href="#"><button class="w3-bar-item w3-button  w3-hide-small w3-hide-medium m-0 w3-hover-red"
+          style="transition: 0.7s; height: 100%; width: 7%;">NEWS</button></a>
+        <a href="#"><button class="w3-bar-item w3-button  w3-hide-small w3-hide-medium m-0 w3-hover-red"
+          style="transition: 0.7s; height: 100%; width: 7%;">EVENTS</button></a>
+        <a href="#"><button class="w3-bar-item w3-button  w3-hide-small w3-hide-medium m-0 w3-hover-red"
+          style="transition: 0.7s; height: 100%; width: 7%;">SOUL</button></a>
         <a href="#"><button onclick="openSect('contact')"
             class="w3-bar-item w3-button   w3-hide-small w3-hide-medium m-0 w3-hover-red"
-            style="transition: 0.7s; padding: 10px 15px 10px 15px;" data-bs-dismiss="offcanvas">
+            style="transition: 0.7s; height: 100%; width: 7%;" data-bs-dismiss="offcanvas">
             CONTACT</button> </a>
         <a href="#"><button onclick="openSect('faculty')"
             class="w3-bar-item w3-button w3-hide-small w3-hide-medium  m-0 w3-hover-red"
-            style="transition: 0.7s; padding: 10px 15px 10px 15px;">
+            style="transition: 0.7s; height: 100%; width: 7%;">
             FACULTY</button></a>
         <a href="#"><button onclick="openSect('sumsa')"
             class="sumsa-btn w3-bar-item w3-button w3-hide-small w3-hide-medium  m-0 w3-hover-red"
-            style="transition: 0.7s; padding: 10px 15px 10px 15px;">
+            style="transition: 0.7s; height: 100%; width: 7%;">
             SUMSA</button></a>
       </div>
+      </div>  
   </nav>
 
   <!-- Navbar on small screens -->
@@ -691,7 +693,7 @@
 
 
       </div>
-      <footer class="w3-container w3-green">
+      <footer class="w3-container w3-metro-teal ">
         <p>Modal Footer</p>
       </footer>
     </div>
@@ -748,11 +750,11 @@
       <div class="container-fluid">
         <h1 class="w3-xxlarge w3-hide-small w3-hide-medium w3-wide w3-animate-opacity w3-row-padding"
           style="margin-top: 15px; white-space:nowrap;">
-          <span class="w3-gray w3-padding"><span class="w3-xxxlarge" style="color: red;">S</span>ILLIMAN <span
+          <span class="w3-flat-silver w3-padding"><span class="w3-xxxlarge" style="color: red;">S</span>ILLIMAN <span
               class="w3-xxxlarge" style="color: red;">U</span>NIVERSITY</span>
         </h1>
         <h1 class="w3-xxlarge w3-hide-small w3-hide-medium w3-wide w3-animate-opacity" style="margin-top: 30px;">
-          <span class="w3-gray w3-padding"><span class="w3-xxxlarge" style="color: green;">M</span>EDICAL <span
+          <span class="w3-flat-silver w3-padding"><span class="w3-xxxlarge" style="color: green;">M</span>EDICAL <span
               class="w3-xxxlarge" style="color: green;">S</span>CHOOL</span>
         </h1>
         <h1 class="w3-padding-large w3-black w3-wide w3-medium w3-hide-large w3-animate-opacity"
@@ -770,7 +772,7 @@
 
 
         <button onclick="document.getElementById('sign-in').style.display='block'" type="button"
-          class="btn btn-success border border-white" style="margin-top: 10px;">
+          class="btn border border-white w3-metro-teal" style="margin-top: 10px;">
           Take a tour</button>
         <!-- <button onclick="document.getElementById('sign-in').style.display='block'"
           class="w3-button w3-black w3-padding-large w3-large w3-hide-small w3-border w3-border-teal"
@@ -789,7 +791,7 @@
 
   <!-- ABOUT SECTION: VISIBLE -->
   <section class="sect">
-    <div class="container-fluid w3-padding-32 w3-text-white bg-success w3-opacity-min">
+    <div class="container-fluid w3-padding-32 text-white w3-metro-teal w3-opacity-min">
       <div class="container text-center justify-content-center text-header reveal">
         ABOUT
       </div>
@@ -852,7 +854,7 @@
                 the
                 quality of such education.</h5>
             </div>
-            <div class="col-lg-3 w3-green text-center"
+            <div class="col-lg-3 w3-metro-teal text-center"
               style="min-height: 100px; padding-top: 1%; box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;">
               <h1 class="w3-animate-left">MISSION</h1>
               <h1 style="font-size: 60px"><i class="bi bi-rocket-takeoff"></i></h1>
@@ -906,7 +908,7 @@
     </div>
 
     <!-- HISTORY -->
-    <div class="container-fluid w3-padding-32 w3-text-white bg-success w3-opacity-min">
+    <div class="container-fluid w3-padding-32 w3-metro-teal">
       <div class="container text-center justify-content-center text-header reveal">
         HISTORY
       </div>
@@ -1008,7 +1010,7 @@
   </section>
 
   <!-- DEAN -->
-  <div class="container-fluid w3-padding-32 w3-text-white bg-success w3-opacity-min sect">
+  <div class="container-fluid w3-padding-32 w3-text-white w3-metro-teal w3-opacity-min sect">
     <div class="container text-center justify-content-center text-header reveal">
       OUR DEAN
     </div>
@@ -1047,7 +1049,7 @@
 
 
   <!-- GALLERY -->
-  <div class="container-fluid w3-padding-32 w3-text-white bg-success w3-opacity-min sect">
+  <div class="container-fluid w3-padding-32 w3-text-white w3-metro-teal w3-opacity-min sect">
     <div class="container text-center justify-content-center text-header reveal">
       GALLERY
     </div>
@@ -1286,7 +1288,7 @@
                 the
                 quality of such education.</h5>
             </div>
-            <div class="col-lg-3 w3-green text-center"
+            <div class="col-lg-3 w3-metro-teal text-center"
               style="min-height: 100px; padding-top: 1%; box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;">
               <h1 class="w3-animate-left">MISSION</h1>
               <h1 style="font-size: 60px"><i class="bi bi-rocket-takeoff"></i></h1>
@@ -1340,7 +1342,7 @@
     </div>
 
     <!-- HISTORY -->
-    <div class="container-fluid w3-padding-32 w3-text-white bg-success w3-opacity-min">
+    <div class="container-fluid w3-padding-32 w3-text-white w3-metro-teal w3-opacity-min">
       <div class="container text-center justify-content-center text-header reveal">
         HISTORY
       </div>
@@ -1503,7 +1505,7 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-    <div class="container-fluid w3-padding-32 w3-text-white bg-success w3-opacity-min">
+    <div class="container-fluid w3-padding-32 w3-text-white w3-metro-teal w3-opacity-min">
       <div class="container text-center justify-content-center text-header reveal">
         DEPARTMENTS
       </div>
