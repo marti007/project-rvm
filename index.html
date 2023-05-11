@@ -124,6 +124,11 @@
     .intro-txt {
       font-family: "Oswald";
     }
+    @media screen and (max-width: 4000px){
+      .intro-text{
+        font-size: 3vh;
+      }
+    }
 
     .fade {
       animation-name: fade;
@@ -158,7 +163,6 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       animation: textclip 2s linear infinite;
-
       font-size: 30px;
     }
 
@@ -264,7 +268,7 @@
 
     @media (max-width: 1400px) {
       .showcase {
-        top: 10%;
+        top: 15%;
       }
 
       .parallax {
@@ -553,7 +557,7 @@
         class="bi bi-menu-button-wide fs-1 text-white"></i></button>
 
       <div class="container-fluid w3-card w3-center w3-metro-teal text-center w3-hide-small w3-hide-medium"
-        style=" margin-top: 25px; height: 6vh; font-size: small;">
+        style=" margin-top: 25px; height: 6vh; min-height: 60px; font-size: small;">
         <a href="index.html"><button class="w3-bar-item w3-button  w3-hide-small w3-hide-medium m-0 w3-hover-red"
           style="transition: 0.7s; height: 100%; width: 7%;"><i class="bi bi-house"></i>HOME</button></a>
         <button onclick="document.getElementById('id01').style.display='block'"
@@ -568,7 +572,7 @@
           style="transition: 0.7s; height: 100%; width: 7%;">NEWS</button></a>
         <a href="#"><button class="w3-bar-item w3-button  w3-hide-small w3-hide-medium m-0 w3-hover-red"
           style="transition: 0.7s; height: 100%; width: 7%;">EVENTS</button></a>
-        <a href="#"><button class="w3-bar-item w3-button  w3-hide-small w3-hide-medium m-0 w3-hover-red"
+        <a href="https://soul.su.edu.ph/" target="_blank"><button class="w3-bar-item w3-button  w3-hide-small w3-hide-medium m-0 w3-hover-red"
           style="transition: 0.7s; height: 100%; width: 7%;">SOUL</button></a>
         <a href="#"><button onclick="openSect('contact')"
             class="w3-bar-item w3-button   w3-hide-small w3-hide-medium m-0 w3-hover-red"
@@ -589,7 +593,7 @@
   <!-- Navbar on small screens -->
   <div class="offcanvas offcanvas-lg offcanvas-top" data-bs-scroll="false" data-bs-backdrop="true" id="offcanvasRight"
     aria-labelledby="offcanvasRightLabel"
-    style="background-color: rgba(255, 2, 2, 0.9); min-height: 500px; z-index: 90000;">
+    style="background-color: #009687f8; min-height: 500px; z-index: 90000;">
     <div class="offcanvas-header">
       <h5 class="offcanvas-title text-white" id="offcanvasRightLabel"></h5>
       <button type="button" class="btn-close " data-bs-dismiss="offcanvas" aria-label="Close"
@@ -731,7 +735,7 @@
 
   <!-- HEADER -->
   <header class="w3-display-container w3-center sect"
-    style="padding: 0; background: linear-gradient(to right, #1c92d2, #f2fcfe);">
+    style="padding: 0; background: white">
 
 
     <div class="parallax"></div>
@@ -739,25 +743,38 @@
       style=" background: rgba(0, 0, 0, 0.5); border-radius: 10px; max-width: 670px; margin-top: 35px;">
       <div class="w3-display-container w3-hide-small w3-hide-medium">
         <a href="https://su.edu.ph/" target="_blank">
-          <img src="SUlogo.png" alt="" class=" w3-image w3-animate-opacity" style="max-width: 20%;">
+          <img src="SUlogo.png" alt="" class=" w3-image w3-animate-opacity" style="width: 18vh; max-width: 24%;">
         </a>
-        <img src="SUMSlogo.png" alt="" class=" w3-image w3-animate-opacity" style="max-width: 24%;">
+        <img src="SUMSlogo.png" alt="" class=" w3-image w3-animate-opacity" style="width: 21vh; max-width: 28%;">
       </div>
       <div class="w3-display-container w3-hide-large w3-padding-16">
-        <img src="SUlogo.png" alt="" class=" w3-image w3-animate-opacity" style="max-width: 35%;">
-        <img src="SUMSlogo.png" alt="" class="w3-image w3-animate-opacity" style="max-width: 41%;">
+        <img src="SUlogo.png" alt="" class=" w3-image w3-animate-opacity" style="max-width: 33%;">
+        <img src="SUMSlogo.png" alt="" class="w3-image w3-animate-opacity" style="max-width: 39%;">
       </div>
       <div class="container-fluid">
-        <h1 class="w3-xxlarge w3-hide-small w3-hide-medium w3-wide w3-animate-opacity w3-row-padding"
-          style="margin-top: 15px; white-space:nowrap;">
-          <span class="w3-flat-silver w3-padding"><span class="w3-xxxlarge" style="color: red;">S</span>ILLIMAN <span
-              class="w3-xxxlarge" style="color: red;">U</span>NIVERSITY</span>
+        <h1 class="w3-hide-small w3-hide-medium w3-wide w3-animate-opacity w3-row-padding"
+          style="margin-top: 15px; white-space:nowrap; font-size: 4vh;">
+          <span class="w3-flat-silver w3-padding"><span  style="color: red; font-size: 5vh;">S</span>ILLIMAN <span
+               style="color: red; font-size: 5vh;">U</span>NIVERSITY</span>
         </h1>
-        <h1 class="w3-xxlarge w3-hide-small w3-hide-medium w3-wide w3-animate-opacity" style="margin-top: 30px;">
-          <span class="w3-flat-silver w3-padding"><span class="w3-xxxlarge" style="color: green;">M</span>EDICAL <span
-              class="w3-xxxlarge" style="color: green;">S</span>CHOOL</span>
+        <h1 class="w3-hide-small w3-hide-medium w3-wide w3-animate-opacity" style="margin-top: 30px; font-size: 4vh;">
+          <span class="w3-flat-silver w3-padding"><span style="color: green; font-size: 5vh;">M</span>EDICAL <span
+              style="color: green; font-size: 5vh;">S</span>CHOOL</span>
         </h1>
-        <h1 class="w3-padding-large w3-black w3-wide w3-medium w3-hide-large w3-animate-opacity"
+
+        <h1 class="w3-hide-large w3-wide w3-animate-opacity w3-row-padding"
+        style="margin-top: 15px; white-space:nowrap; font-size: 2.5vh;">
+        <span class="w3-flat-silver w3-padding"><span  style="color: red; font-size: 3vh;">S</span>ILLIMAN <span
+             style="color: red; font-size: 3vh;">U</span>NIVERSITY</span>
+      </h1>
+      <h1 class="w3-hide-large w3-wide w3-animate-opacity" style="margin-top: 30px; font-size: 2.5vh;">
+        <span class="w3-flat-silver w3-padding"><span style="color: green; font-size: 3vh;">M</span>EDICAL <span
+            style="color: green; font-size: 3vh;">S</span>CHOOL</span>
+      </h1>
+
+
+
+        <h1 class="w3-padding-large w3-black w3-wide w3-medium w3-hide-small w3-hide-medium w3-hide-large w3-animate-opacity"
           style="white-space:nowrap;">
           <span class="fs-5" style="color: red;">SILLIMAN UNIVERSITY</span><br><span class="fs-3"
             style="color: green;">MEDICAL
@@ -765,14 +782,14 @@
         </h1>
         <p class="w3-medium"> </p>
         <h1 class="intro-txt"
-          style="text-transform: uppercase; color: white; font-family: 'Saira'; font-size: 26px; padding-top: 15px;">
-          Preparing Doctors in the 21<sup style="font-size: 16px;">st</sup> Century with <br>
-          <span class="auto-type" style="font-size: 30px; font-family: 'Poppins';"> </span>
+          style="text-transform: uppercase; color: white; font-family: 'Saira'; font-size: 3vh; padding-top: 15px;">
+          Preparing Doctors in the 21<sup style="font-size: 2vh;">st</sup> Century with <br>
+          <span class="auto-type" style="font-size: 3.5vh; font-family: 'Poppins';"> </span>
         </h1>
 
 
         <button onclick="document.getElementById('sign-in').style.display='block'" type="button"
-          class="btn border border-white w3-metro-teal" style="margin-top: 10px;">
+          class="btn border border-white w3-metro-teal">
           Take a tour</button>
         <!-- <button onclick="document.getElementById('sign-in').style.display='block'"
           class="w3-button w3-black w3-padding-large w3-large w3-hide-small w3-border w3-border-teal"
