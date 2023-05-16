@@ -264,7 +264,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color:  grey;
+  background-color:  gray;
   width: auto;
   min-width: 200px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
