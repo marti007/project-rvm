@@ -331,7 +331,6 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
   -o-animation: ring 1s linear 0s infinite;
   animation: ring 1.5s linear 0s infinite;
 }
-
 @-webkit-keyframes bounce {
   0%, 100% {top: 9px; opacity: 0.5}
   25% {top: 12px; opacity: 1}
