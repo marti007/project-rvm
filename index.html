@@ -586,8 +586,19 @@
             class="sumsa-btn w3-bar-item w3-button w3-hide-small w3-hide-medium  m-0 w3-hover-red"
             style="transition: 0.7s; height: 100%; width: 7%;">
             SUMSA</button></a>
+            <div class="dropdown w3-hide-small w3-hide-medium  m-0" style="transition: 0.7s; height: 100%; width: 7%;">
+              <button class="dropbtn w3-bar-item w3-button w3-hide-small w3-hide-medium  m-0 w3-hover-red"
+              style="transition: 0.7s; height: 100%; width: 100%;">ALLUMNI</button>
+              <div class="dropdown-content  ">
+                <a href="#" style="transition: 0.7s all ease;">BATCH 1</a>
+                <a href="#" style="transition: 0.7s all ease;">BATCH 2</a>
+                <a href="#" style="transition: 0.7s all ease;">BATCH 3</a>
+              </div>
+            </div>  
       </div>
-      </div>  
+      
+      </div>
+
   </nav>
 
   <!-- Navbar on small screens -->
@@ -792,11 +803,16 @@
         Preparing Doctors in the 21<sup style="font-size: 2vw;">st</sup> Century with <br>
         <span class="auto-type2" style="font-size: 4.2vw; font-family: 'Poppins';"> </span>
         </h1>
+        <div class="container w3-center justify-content-center">
+          <a href="#about-sect" class="button scroll">
+            <span class="scroll-down-arrow"></span>
+          </a>
+        </div>
+        
 
-
-        <button onclick="document.getElementById('sign-in').style.display='block'" type="button"
+        <!-- <button onclick="document.getElementById('sign-in').style.display='block'" type="button"
           class="btn border border-white w3-metro-teal">
-          Take a tour</button>
+          Take a tour</button> -->
         <!-- <button onclick="document.getElementById('sign-in').style.display='block'"
           class="w3-button w3-black w3-padding-large w3-large w3-hide-small w3-border w3-border-teal"
           style="transition: 0.3s; margin-top: 10px;">Console &#8594;</button>
@@ -813,7 +829,7 @@
   </header>
 
   <!-- ABOUT SECTION: VISIBLE -->
-  <section class="sect">
+  <section class="sect" id="about-sect">
     <div class="container-fluid w3-padding-32 text-white w3-metro-teal w3-opacity-min">
       <div class="container text-center justify-content-center text-header reveal">
         ABOUT
