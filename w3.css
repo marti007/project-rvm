@@ -280,11 +280,19 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
   
 }
 
-.dropdown-content a:hover {background-color: rgba(255, 0, 0, 0.7);}
+.dropdown-content a:hover {background-color: #f44336;}
 
 .dropdown:hover .dropdown-content {display: block;}
 
-.dropdown:hover .dropbtn {background-color: red;}
+.dropdown:hover .dropbtn {background-color: #f44336;}
+
+/* .about-btn:focus{background-color: #f44336;}
+.news-btn:focus{background-color: #f44336;}
+.events-btn:focus{background-color: #f44336;}
+.faculty-btn:focus{background-color: #f44336;}
+.sumsa-btn:focus{background-color: #f44336;}
+.allumni-btn:focus{background-color: #f44336;}
+.contact-btn:focus{background-color: #f44336;} */
 
 .button.scroll {
   padding: 8px;
@@ -350,4 +358,12 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 @keyframes ring {
   0%, 100% {transform: scale(1,1); opacity:1}
   75% {transform: scale(1.2,1.2); opacity:0.4}
+}
+
+
+.actives{
+  background:red;
+}
+button.sums-btn:active{
+  background:red;
 }

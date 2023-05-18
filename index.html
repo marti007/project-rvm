@@ -20,6 +20,7 @@
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
     crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 
   <style>
     @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
@@ -560,12 +561,12 @@
           class="bi bi-menu-button-wide fs-5 text-white"></i></button>
 
       <div class="container-fluid w3-card w3-center w3-metro-teal text-center w3-hide-small w3-hide-medium"
-        style=" margin-top: 25px; height: 6vh; min-height: 60px; font-size: small;">
+        style=" margin-top: 25px; height: 6vh; min-height: 60px; font-size: small;" id="my_styles">
         <a href="index.html"><button class="w3-bar-item w3-button  w3-hide-small w3-hide-medium m-0 w3-hover-red"
-            style="transition: 0.7s; height: 100%; width: auto;"><i class="bi bi-house"></i>HOME</button></a>
+            style="transition: 0.7s; height: 100%; width: auto; min-width: 6%;"><i class="bi bi-house"></i>HOME</button></a>
         <button onclick="document.getElementById('id01').style.display='block'"
           class="w3-bar-item w3-button w3-hide-small w3-hide-medium  m-0 w3-hover-red"
-          style="transition: 0.7s; height: 100%;"><i class="bi bi-card-checklist"></i>
+          style="transition: 0.7s; height: 100%; width: auto; min-width: 6%"><i class="bi bi-card-checklist"></i>
           ADMISSION</button>
         <!-- <a href="#"><button onclick="openSect('about-hidden')"
             class="w3-bar-item w3-button w3-hide-small w3-hide-medium  m-0 w3-hover-red"
@@ -573,8 +574,8 @@
             ABOUT</button></a> -->
         <div class="dropdown w3-hide-small w3-hide-medium  m-0" style="transition: 0.7s; height: 100%; width: auto;">
           <a href="#"><button onclick="openSect('about-hidden')"
-              class="dropbtn w3-bar-item w3-button w3-hide-small w3-hide-medium  m-0 w3-hover-red"
-              style="transition: 0.7s; height: 100%; width: 100%;">ABOUT <i
+              class="about-btn sums-btn dropbtn w3-bar-item w3-button w3-hide-small w3-hide-medium  m-0 w3-hover-red"
+              style="transition: 0.7s; height: 100%; width: auto; min-width: 6%">ABOUT <i
                 class="bi bi-caret-down-fill"></i></button></a>
           <div class="dropdown-content" style="white-space: nowrap;">
             <a onclick="openSect('about-hidden')" href="#mission-hidden" style="transition: 0.7s all ease;">Mission &
@@ -586,24 +587,24 @@
           </div>
         </div>
 
-        <a href="#"><button class="w3-bar-item w3-button  w3-hide-small w3-hide-medium m-0 w3-hover-red"
-            style="transition: 0.7s; height: 100%; width: auto;">NEWS</button></a>
-        <a href="#"><button class="w3-bar-item w3-button  w3-hide-small w3-hide-medium m-0 w3-hover-red"
-            style="transition: 0.7s; height: 100%; width: auto;">EVENTS</button></a>
+        <a href="#"><button class="sums-btn news-btn w3-bar-item w3-button  w3-hide-small w3-hide-medium m-0 w3-hover-red"
+            style="transition: 0.7s; height: 100%; width: auto; min-width: 6%">NEWS</button></a>
+        <a href="#"><button class="sums-btn events-btn w3-bar-item w3-button  w3-hide-small w3-hide-medium m-0 w3-hover-red"
+            style="transition: 0.7s; height: 100%; width: auto; min-width: 6%">EVENTS</button></a>
         <a href="https://soul.su.edu.ph/" target="_blank"><button
             class="w3-bar-item w3-button  w3-hide-small w3-hide-medium m-0 w3-hover-red"
-            style="transition: 0.7s; height: 100%; width: auto;">SOUL</button></a>
+            style="transition: 0.7s; height: 100%; width: auto; min-width: 6%">SOUL</button></a>
         <a href="#"><button onclick="openSect('faculty')"
-            class="w3-bar-item w3-button w3-hide-small w3-hide-medium  m-0 w3-hover-red"
-            style="transition: 0.7s; height: 100%; width: auto;">
+            class="sums-btn faculty-btn w3-bar-item w3-button w3-hide-small w3-hide-medium  m-0 w3-hover-red"
+            style="transition: 0.7s; height: 100%; width: auto; min-width: 6%">
             FACULTY</button></a>
         <a href="#"><button onclick="openSect('sumsa')"
-            class="sumsa-btn w3-bar-item w3-button w3-hide-small w3-hide-medium  m-0 w3-hover-red"
-            style="transition: 0.7s; height: 100%; width: auto;">
+            class="sums-btn sumsa-btn w3-bar-item w3-button w3-hide-small w3-hide-medium  m-0 w3-hover-red"
+            style="transition: 0.7s; height: 100%; width: auto; min-width: 6%">
             SUMSA</button></a>
         <div class="dropdown w3-hide-small w3-hide-medium  m-0" style="transition: 0.7s; height: 100%; width: auto;">
-          <button class="dropbtn w3-bar-item w3-button w3-hide-small w3-hide-medium  m-0 w3-hover-red"
-            style="transition: 0.7s; height: 100%; width: 100%;">ALLUMNI <i class="bi bi-caret-down-fill"></i></button>
+          <button class="sums-btn allumni-btn dropbtn w3-bar-item w3-button w3-hide-small w3-hide-medium  m-0 w3-hover-red"
+            style="transition: 0.7s; height: 100%; width: auto; min-width: 6%">ALLUMNI <i class="bi bi-caret-down-fill"></i></button>
           <div class="dropdown-content  ">
             <a href="#" style="transition: 0.7s all ease;">BATCH 1</a>
             <a href="#" style="transition: 0.7s all ease;">BATCH 2</a>
@@ -611,8 +612,8 @@
           </div>
         </div>
         <a href="#"><button onclick="openSect('contact')"
-            class="w3-bar-item w3-button   w3-hide-small w3-hide-medium m-0 w3-hover-red"
-            style="transition: 0.7s; height: 100%; width: auto;" data-bs-dismiss="offcanvas">
+            class="sums-btn contact-btn w3-bar-item w3-button   w3-hide-small w3-hide-medium m-0 w3-hover-red"
+            style="transition: 0.7s; height: 100%; width: auto; min-width: 6%" data-bs-dismiss="offcanvas">
             CONTACT</button> </a>
 
       </div>
@@ -1315,7 +1316,7 @@
     <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade" data-bs-ride="carousel"
       data-bs-pause="false">
       <div class="carousel-inner">
-        <h1 class="w3-display-bottommiddle text-center text-white"
+        <h1 class="sums-scroll-icon w3-display-bottommiddle text-center text-white"
           style="z-index: 10; bottom: 15%;"> <span class="w3-hide-small"><h1 style="padding: 10px 50px 10px 50px;"></h1> </span> 
         
         <span class="w3-hide-small" style="font-size: 10px; background-color: rgba(0, 0, 0, 0.5); padding: 5px 15px 5px 15px; border: #f2fcfe; border-radius: 5px;">SCROLL DOWN</span> <br>  
@@ -1574,7 +1575,7 @@
     <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade" data-bs-ride="carousel"
       data-bs-pause="false">
       <div class="carousel-inner">
-        <h1 class="w3-display-bottommiddle text-center text-white"
+        <h1 class="sums-scroll-icon w3-display-bottommiddle text-center text-white"
           style="z-index: 10; bottom: 15%;"> <span class="w3-hide-small"><h1 style="padding: 10px 50px 10px 50px;"></h1> </span> 
         
         <span class="w3-hide-small" style="font-size: 10px; background-color: rgba(0, 0, 0, 0.5); padding: 5px 15px 5px 15px; border: #f2fcfe; border-radius: 5px;">SCROLL DOWN</span> <br>  
@@ -2047,7 +2048,12 @@
     window.addEventListener('load', fadeOutEffect);
 
   </script>
-
+<script>
+  jQuery("#my_styles .sums-btn").click(function(){
+        jQuery("#my_styles .sums-btn").removeClass('actives');
+        jQuery(this).toggleClass('actives'); 
+});
+</script>
 
 </body>
 
