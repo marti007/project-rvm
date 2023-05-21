@@ -396,7 +396,8 @@ button.sums-btn:active{
   position: fixed;
   bottom: 25%;
   right: 30px;
-  transition: background-color .3s, opacity .5s, visibility .5s;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
   opacity: 0;
   visibility: hidden;
   z-index: 1000;
@@ -423,6 +424,9 @@ button.sums-btn:active{
   opacity: 0.8;
   visibility: visible;
 }
+
+/* Styles for the content section */
+
 
 @media (max-width: 620px) {
   #button {
@@ -488,4 +492,13 @@ margin:15px 0px;
 .footer .footer-row a i{
 margin:0% 3%;
 }
+}
+
+.sums-loader::-webkit-scrollbar{
+  display: none;
+}
+
+.sums-loader{
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
 }
