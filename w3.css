@@ -385,3 +385,111 @@ button.sums-btn:active{
 .team-visible p{
   font-family: 'PT Sans Narrow', sans-serif;
 }
+
+#button {
+  display: inline-block;
+  background-color: #0000009f;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 25%;
+  right: 30px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+  text-decoration: none;
+}
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #00b9a7;
+  text-decoration: none;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#button:active {
+  background-color: #555;
+}
+#button.show {
+  opacity: 0.8;
+  visibility: visible;
+}
+
+/* Styles for the content section */
+
+
+@media (max-width: 620px) {
+  #button {
+    right: 0;
+    width: 35px;
+    height: 35px;
+    bottom: 15%;
+  }
+  #button::after {
+  font-size: 20px;
+  line-height: 35px;
+  
+}
+}
+
+.footer{
+
+font-family: 'Play', sans-serif;
+text-align:center;
+}
+
+.footer .footer-row{
+width:100%;
+margin-bottom: 2%;
+padding:0.6% 0%;
+color:rgb(124, 124, 124);
+font-size:0.8em;
+}
+
+.footer .footer-row a{
+text-decoration:none;
+color:rgb(192, 192, 192);
+transition:0.5s;
+}
+
+.footer .footer-row a:hover{
+color:#fff;
+}
+
+.footer .footer-row ul{
+width:100%;
+padding: 0;
+}
+
+.footer .footer-row li{
+display:inline-block;
+margin:0px 30px;
+}
+
+.footer .footer-row a i{
+font-size:2em;
+margin:0% 1%;
+}
+
+@media (max-width:720px){
+.footer{
+padding:5%;
+}
+.footer .footer-row ul li{
+display:block;
+margin:10px 0px;
+}
+.footer .footer-row a i{
+margin:0% 3%;
+}
+}

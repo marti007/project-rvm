@@ -6,6 +6,7 @@
   <link rel="icon" type="image/x-icon" href="img/SUMSlogo.png">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet"> 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
@@ -85,13 +86,14 @@
     }
 
     .parallax {
+      
       background-image: url("medschool.jpg");
       background-attachment: fixed;
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
-      height: 1000px;
-      opacity: 0.6;
+      height: 100vh;
+      opacity: 0.8;
     }
 
     .parallax2 {
@@ -595,7 +597,7 @@
             style="transition: 0.7s; height: 100%; width: auto; min-width: 6%">EVENTS</button></a>
         <a href="https://soul.su.edu.ph/" target="_blank"><button
             class="w3-bar-item w3-button  w3-hide-small w3-hide-medium m-0 w3-hover-red"
-            style="transition: 0.7s; height: 100%; width: auto; min-width: 6%">SOUL</button></a>
+            style="transition: 0.7s; height: 100%; width: auto; min-width: 6%">mySOUL</button></a>
         <a href="#"><button onclick="openSect('faculty')"
             class="sums-btn faculty-btn w3-bar-item w3-button w3-hide-small w3-hide-medium  m-0 w3-hover-red"
             style="transition: 0.7s; height: 100%; width: auto; min-width: 6%">
@@ -773,7 +775,7 @@
 
     <div class="parallax"></div>
     <div class="w3-display-topmiddle w3-display-container w3-text-red w3-center w3-padding-16 showcase"
-      style=" background: rgba(0, 0, 0, 0.5); border-radius: 10px; max-width: 650px; margin-top: 35px;">
+      style=" background: rgba(20, 20, 20, 0.5); border-radius: 10px; max-width: 650px; margin-top: 35px;">
       <div class="w3-display-container w3-hide-small ">
         <a href="https://su.edu.ph/" target="_blank">
           <img src="SUlogo.png" alt="" class=" w3-image w3-animate-opacity" style="width: 18vh; max-width: 23%;">
@@ -852,7 +854,7 @@
   </header>
 
   <!-- ABOUT SECTION: VISIBLE -->
-  <section class="sect" id="about-sect">
+  <section class="sect" id="about-sect" style="scroll-margin-top: 3em;">
     <div class="container-fluid w3-padding-32 text-white w3-metro-teal w3-opacity-min">
       <div class="container text-center justify-content-center text-header reveal">
         ABOUT
@@ -976,7 +978,7 @@
     </div>
 
     <!-- HISTORY -->
-    <div class="container-fluid w3-padding-32 w3-metro-teal" id="sums-history">
+    <div class="container-fluid w3-padding-32 w3-metro-teal" id="sums-history" style="scroll-padding-top: 2em;">
       <div class="container text-center justify-content-center text-header reveal">
         HISTORY
       </div>
@@ -1381,7 +1383,7 @@
     </div>
     <div class="container">
       <!-- <div class="parallax2"></div> -->
-      <div class="row justify-content-center" style="margin-top: 2%; margin-bottom: 2%;" id="mission-hidden">
+      <div class="row justify-content-center" style="margin-top: 2%; margin-bottom: 2%; scroll-margin-top: 3em;" id="mission-hidden">
         <div class="col-10 w3-container justify-content-center pt-5">
           <div class="row justify-content-center sums-box reveal">
             <div class="col-md-3 w3-red text-center "
@@ -1467,7 +1469,7 @@
     </div>
 
     <!-- HISTORY -->
-    <div class="container-fluid w3-padding-32 w3-text-white w3-metro-teal w3-opacity-min" id="history-hidden">
+    <div class="container-fluid w3-padding-32 w3-text-white w3-metro-teal w3-opacity-min" id="history-hidden" style="scroll-margin-top: 3em;">
       <div class="container text-center justify-content-center text-header reveal">
         HISTORY
       </div>
@@ -1567,7 +1569,7 @@
       </div>
     </div>
     <!-- DEAN HIDDEN -->
-    <div class="container-fluid w3-padding-32 w3-text-white w3-metro-teal w3-opacity-min" id="dean-hidden">
+    <div class="container-fluid w3-padding-32 w3-text-white w3-metro-teal w3-opacity-min" id="dean-hidden" style="scroll-margin-top: 3em;">
       <div class="container text-center justify-content-center text-header reveal">
         OUR DEAN
       </div>
@@ -1606,7 +1608,7 @@
       </div>
     </div>
     <!-- TEAM HIDDEN -->
-    <div class="w3-center w3-padding-64 reveal" id="team-hidden">
+    <div class="w3-center w3-padding-64 reveal" id="team-hidden" style="scroll-margin-top: 3em;">
       <span class="w3-xlarge w3-bottombar  w3-padding-16 ">SUMS Admin</span>
     </div>
 
@@ -1686,7 +1688,7 @@
   </section>
 
 
-  <!-- SUMSA SECTION:HIDDEN -->
+  <!-- SUMSA HIDDEN -->
   <section class="w3-display-container w3-animate-opacity sect" id="sumsa" style="display: none; z-index: 1;">
     <div class="w3-black w3-opacity-min w3-hide-large w3-hide-medium " style="min-height: 90px;">
     </div>
@@ -1721,17 +1723,17 @@
     </div>
   </section>
 
-  <!-- FACULTY SECTION: HIDDEN -->
+  <!-- FACULTY HIDDEN -->
   <section class="w3-display-container w3-animate-opacity sect" id="faculty" style="display: none; z-index: 1;">
     <div class="w3-black w3-opacity-min w3-hide-large w3-hide-medium " style="min-height: 90px;">
     </div>
     <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade" data-bs-ride="carousel"
-      data-bs-pause="false">
+      data-bs-pause="false" style="height: 100vh;">
       <div class="carousel-inner">
         <h1 class="w3-display-middle text-center text-white"
           style="z-index: 10; background-color: rgba(0, 0, 0, 0.5); padding: 10px 50px 10px 50px;"> OUR FACULTY </h1>
         <div class="carousel-item active">
-          <img src="medschool3.png" class="d-block w-100 " alt="...">
+          <img src="img/SUMS_COVER1.png" class="d-block w-100 " alt="...">
         </div>
         <div class="carousel-item">
           <img src="sound.jpg" class="d-block w-100" alt="...">
@@ -1856,7 +1858,7 @@
     </div>
   </div>
 
-  <!-- CONTACT SECTION: HIDDEN -->
+  <!-- CONTACT HIDDEN -->
   <section class="w3-display-container w3-animate-opacity sect" id="contact" style="display: none; z-index: 1;">
     <div class="w3-black w3-opacity-min w3-hide-large w3-hide-medium " style="min-height: 90px;">
     </div>
@@ -1933,23 +1935,21 @@
 
   </section>
 
+  <a id="button"></a>
 
-  <!-- Footer -->
-  <footer class="w3-container w3-padding-32 w3-dark-grey">
+  <!-- FOOTER -->
+  <footer class="w3-container w3-padding-32 w3-flat-wet-asphalt justify-content-center">
+
     <!-- Messenger Chat Plugin Code -->
     <div id="fb-root"></div>
-
-    <!-- Your Chat Plugin code -->
     <div id="fb-customer-chat" class="fb-customerchat">
     </div>
-
     <script>
       var chatbox = document.getElementById('fb-customer-chat');
       chatbox.setAttribute("page_id", "102116311537211");
       chatbox.setAttribute("attribution", "biz_inbox");
     </script>
-
-    <!-- Your SDK code -->
+    <!-- FB SDK code -->
     <script>
       window.fbAsyncInit = function () {
         FB.init({
@@ -1966,28 +1966,46 @@
         fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
     </script>
-
+    <div class="container-fluid">
+      <div class="footer">
+        <div class="footer-row">
+          <ul>
+          <li><a href="#" onclick="openSect('contact')">Contact us</a></li>
+          <li><a href="https://soul.su.edu.ph/">mySOUL</a></li>
+          <li><a href="https://su.edu.ph/about/website-data-privacy-policy/">Website Privacy Policy</a></li>
+          <li><a href="https://su.edu.ph/silliman-university-data-privacy-policy/">SU Data Privacy Policy</a></li>
+          <li><a href="https://su.edu.ph/services/careers/" target="_blank">Careers at Silliman</a></li>
+          </ul>
+          </div>
+      </div>
+    </div>
     <div class="w3-row-padding">
       <div class="w3-third">
-        <h3>FOOTER</h3>
+        <h3></h3>
         <p></p>
+        
       </div>
 
-      <div class="w3-third">
-        <h3>FAQ</h3>
-        <ul class="w3-ul w3-hoverable">
+      <div class="w3-third justify-content-center text-center">
+        
+        
+
+        <img src="SUlogo.png" class="w3-center w3-hoverable" style="width:100px">
+        <img src="img/SUMSlogo.png" class="w3-center w3-hoverable" style="width:95px">
+        <ul class="w3-ul">
           <li class="w3-padding-16">
-            <img src="" class="w3-left w3-margin-right" style="width:50px">
-            <span class="w3-large"></span><br>
-            <span></span>
+            <span class="w3-large w3-text-red w3-wide">SILLIMAN UNIVERSITY</span><br>
+            <span class="w3-large w3-text-teal">MEDICAL SCHOOL</span>
+            <br>
+            <span class="w3-text-white" style="font-size: x-small;">All rights reserved <i class="bi bi-c-circle"></i> 2023 </span>
           </li>
           <li class="w3-padding-16">
             <img src="" class="w3-left w3-margin-right" style="width:50px">
-            <span class="w3-large"></span><br>
+            <span></span><br>
             <span></span>
           </li>
         </ul>
-        <h4>Follow Us</h4>
+        <h4></h4>
         <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Facebook"><i
             class="fa fa-facebook"></i></a>
         <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Twitter"><i
@@ -2002,16 +2020,10 @@
 
 
       <div class="w3-third">
-        <h3>POPULAR TAGS</h3>
+        <h3></h3>
         <p>
         </p>
       </div>
-      <div style="position:relative;bottom:50px;z-index:1;" class="w3-tooltip w3-right">
-        <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>
-        <a class="w3-button w3-theme" href="#"><span class="w3-xlarge">
-            <i class="fa fa-chevron-circle-up"></i></span></a>
-      </div>
-
     </div>
   </footer>
 
@@ -2022,8 +2034,28 @@
   </div>
 
 
-  <!-- End page content -->
-  <!-- Typing animation source -->
+  <!-- END OF CONTENT -->
+
+  <!-- BACK TO TOP BTN -->
+  <script>
+    var btn = $('#button');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 800) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '800');
+});
+
+  </script>
+
+  <!-- TYPING ANIMATION -->
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
   <script>
