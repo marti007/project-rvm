@@ -424,9 +424,6 @@ button.sums-btn:active{
   visibility: visible;
 }
 
-/* Styles for the content section */
-
-
 @media (max-width: 620px) {
   #button {
     right: 0;
