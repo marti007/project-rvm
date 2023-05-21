@@ -396,8 +396,7 @@ button.sums-btn:active{
   position: fixed;
   bottom: 25%;
   right: 30px;
-  transition: background-color .3s, 
-    opacity .5s, visibility .5s;
+  transition: background-color .3s, opacity .5s, visibility .5s;
   opacity: 0;
   visibility: hidden;
   z-index: 1000;
