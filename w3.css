@@ -373,6 +373,12 @@ button.sums-btn:active{
   z-index: 10;
 }
 
+@media screen and (max-width: 575px){
+  .zoom:hover{
+    transform: none;
+  }
+}
+
 .zoom{
   transition: transform .2s;
 }
