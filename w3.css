@@ -368,6 +368,10 @@ button.sums-btn:active{
   background:red;
 }
 
+.mission-btn:focus .dropbtn{
+  background:red;
+}
+
 .zoom:hover {
   transform: scale(1.5); 
   z-index: 10;
