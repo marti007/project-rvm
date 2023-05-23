@@ -512,3 +512,9 @@ margin:0% 3%;
   -ms-overflow-style: none; 
   scrollbar-width: none; 
 }
+
+.home-btn:focus{
+  background-color: red;
+  border: none;
+  outline: 0;
+}
