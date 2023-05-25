@@ -1724,7 +1724,7 @@
                 in Manila
                 until November 6, 1997 when the plan to hold a Symposium on Innovative Medical Curriculum was finalized.
               </p><br>
-              <span id="dots">...</span><span id="more">
+              <span id="dotsHidden">...</span><span id="moreHidden">
                 <p class="w3-flat-concrete justify-content-center p-3 p-sm-5 text-align">
                   The symposium was held at the Cunningham Hall on November 29, 1997, facilitated by the members of the
                   Task
@@ -1783,7 +1783,7 @@
                   banc meeting on April 25, 2005.
                 </p>
               </span>
-              <button type="button" class="btn btn-success" onclick="readMore()" id="historyBtn">READ
+              <button type="button" class="btn btn-success" onclick="readHidden()" id="historyHidden">READ
                 MORE</button>
             </div>
           </div>
@@ -2048,7 +2048,7 @@
         </div>
         <div class="col-6 col-sm-2 p-2 zoom ">
           <div class="card" style="width: 100%;">
-            <a href="#"><img src="pediatrics.png" class="card-img-top" alt="..."></a>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#pediaModal"><img src="pediatrics.png" class="card-img-top" alt="..."></a>
           </div>
         </div>
         <div class="col-6 col-sm-2 p-2 zoom ">
@@ -2470,6 +2470,16 @@
             </div>
 
             <div class="col-xl-2 zoom p-1">
+              <div class="card h-100 shadow ">
+                <img src="img/User-avatar.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Dr. Earnest John B. Tenorio</h5>
+                  <p class="card-text"></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-2 zoom p-1">
               <div class="card h-100 shadow">
                 <img src="img/User-avatar.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -2563,16 +2573,6 @@
               <div class="card h-100 shadow ">
                 <img src="img/User-avatar.png" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Dr. Earnest John B. Tenorio</h5>
-                  <p class="card-text"></p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-xl-2 zoom p-1">
-              <div class="card h-100 shadow ">
-                <img src="img/User-avatar.png" class="card-img-top" alt="...">
-                <div class="card-body">
                   <h5 class="card-title">Dr. Laurence Michael N. Vera Cruz</h5>
                   <p class="card-text"></p>
                 </div>
@@ -2627,7 +2627,117 @@
       </div>
     </div>
   </div>
+  <!-- PEDIATRICS MODAL -->
+  <div class="faculty-modal modal fade" id="pediaModal" tabindex="-1" data-bs-backdrop="static" aria-hidden="true"
+  style="z-index: 99999;">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+    <div class="modal-content">
+      <div class="modal-header w3-metro-teal">
+        <h1 class="modal-title fs-5 center" id="fcmModalLabel">DEPARTMENT OF PEDIATRICS</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body w3-flat-clouds text-center p-sm-5">
+        <div
+          class="row row-sm-4 row-cols-2 row-cols-sm-3 row-cols-lg-4 row-cols-xl-5 row-cols-xxl-5 center row-padding g-4">
 
+          <div class="col-xl-2 zoom p-1">
+            <div class="card h-100 shadow ">
+              <img src="img/User-avatar.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Dr. Geraldine F. Singco</h5>
+                <p class="card-text">Subject Coordinator</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-2 zoom p-1">
+            <div class="card h-100 shadow ">
+              <img src="img/User-avatar.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Dr. Rosana R. Habaña</h5>
+                <p class="card-text"></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-2 zoom p-1">
+            <div class="card h-100 shadow ">
+              <img src="img/User-avatar.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Dr. Amy Luz T. Corpuz</h5>
+                <p class="card-text"></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-2 zoom p-1">
+            <div class="card h-100 shadow ">
+              <img src="img/User-avatar.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Dr. Desiree R. Gubantes</h5>
+                <p class="card-text"></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-2 zoom p-1">
+            <div class="card h-100 shadow">
+              <img src="img/User-avatar.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Dr. Elaine H. Kho</h5>
+                <p class="card-text"></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-2 zoom p-1">
+            <div class="card h-100 shadow ">
+              <img src="img/User-avatar.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Dr. Hope Charmaine R. Ontal</h5>
+                <p class="card-text"></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-2 zoom p-1" >
+            <div class="card h-100 shadow ">
+              <img src="img/User-avatar.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Dr. Hazel J. Sudaria</h5>
+                <p class="card-text"></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-2 zoom p-1">
+            <div class="card h-100 shadow">
+              <img src="img/User-avatar.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Dr. Soci Ame P. Viking</h5>
+                <p class="card-text"></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-2 zoom p-1">
+            <div class="card h-100 shadow">
+              <img src="img/User-avatar.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Dr. Cassey Lind Dianne B. Yee</h5>
+                <p class="card-text"></p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="modal-footer w3-flat-wet-asphalt">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
