@@ -395,6 +395,16 @@ button.sums-btn:active{
 .team-visible p{
   font-family: 'PT Sans Narrow', sans-serif;
 }
+.faculty-modal h5{
+  font-size: medium;
+  font-family: 'Bebas Neue', sans-serif;
+  color: #0989f1;
+}
+
+.faculty-modal p{
+  font-size: smaller;
+  font-family: 'PT Sans Narrow', sans-serif;
+}
 
 #button {
   display: inline-block;
