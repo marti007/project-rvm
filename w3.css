@@ -385,6 +385,7 @@ button.sums-btn:active{
 
 .zoom{
   transition: transform .2s;
+
 }
 
 .team-visible h5{
