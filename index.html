@@ -6,7 +6,7 @@
   <link rel="icon" type="image/x-icon" href="img/SUMSlogo.png">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
@@ -29,6 +29,7 @@
     @import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,300;1,200&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@700;900&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=PT+Sans+Narrow&family=Roboto:wght@700;900&display=swap');
+
     html {
       scroll-behavior: smooth;
     }
@@ -86,7 +87,7 @@
     }
 
     .parallax {
-      
+
       background-image: url("medschool.jpg");
       background-attachment: fixed;
       background-position: center;
@@ -326,7 +327,7 @@
   </style>
 </head>
 
-<body> 
+<body>
   <!-- LOADER -->
   <div id="preloader" class="container-fluid  justify-content-center w3-flat-clouds sums-loader"
     style="z-index: 30000; top:0; right:0; bottom:0; left:0; position: fixed; overflow: hidden;">
@@ -565,31 +566,40 @@
 
       <div class="container-fluid w3-card w3-center w3-metro-teal text-center w3-hide-small w3-hide-medium"
         style=" margin-top: 25px; height: 6vh; min-height: 60px; font-size: small; " id="my_styles">
-        <a href="index.html"><button autofocus class="sums-btn home-btn w3-bar-item w3-button  w3-hide-small w3-hide-medium m-0 w3-hover-red"
-            style="transition: 0.3s; height: 100%; width: auto; min-width: 6%;"><i class="bi bi-house"></i>HOME</button></a>
+        <a href="index.html"><button autofocus
+            class="sums-btn home-btn w3-bar-item w3-button  w3-hide-small w3-hide-medium m-0 w3-hover-red"
+            style="transition: 0.3s; height: 100%; width: auto; min-width: 6%;"><i
+              class="bi bi-house"></i>HOME</button></a>
         <button onclick="document.getElementById('id01').style.display='block'"
           class="w3-bar-item w3-button w3-hide-small w3-hide-medium  m-0 w3-hover-red"
           style="transition: 0.3s; height: 100%; width: auto; min-width: 6%"><i class="bi bi-card-checklist"></i>
           ADMISSION</button>
-        <div class="sums-btn dropdown w3-hide-small w3-hide-medium  m-0" style="transition: 0.3s; height: 100%; width: auto;">
+        <div class="sums-btn dropdown w3-hide-small w3-hide-medium  m-0"
+          style="transition: 0.3s; height: 100%; width: auto;">
           <a href="#"><button onclick="openSect('about-hidden')"
               class="about-btn  dropbtn w3-bar-item w3-button w3-hide-small w3-hide-medium  m-0 w3-hover-red"
               style="transition: 0.3s; height: 100%; width: auto; min-width: 6%">ABOUT <i
                 class="bi bi-caret-down-fill"></i></button></a>
           <div class="dropdown-content" style="white-space: nowrap;">
-            <a onclick="openSect('about-hidden')" href="#mission-hidden" class="sums-btn" style="transition: 0.3s all ease;">Mission &
+            <a onclick="openSect('about-hidden')" href="#mission-hidden" class="sums-btn"
+              style="transition: 0.3s all ease;">Mission &
               Vision</a>
             <a onclick="openSect('about-hidden')" href="#history-hidden" style="transition: 0.3s all ease;">History</a>
             <a onclick="openSect('about-hidden')" href="#dean-hidden" style="transition: 0.3s all ease;">Our Dean</a>
-            <a onclick="openSect('about-hidden')" href="#team-hidden" style="transition: 0.3s all ease;">Meet the Team</a>
-            <a  href="https://su.edu.ph/about/website-data-privacy-policy/" target="_blank" style="transition: 0.3s all ease;">Website Privacy Policy</a>
-            <a  href="https://su.edu.ph/silliman-university-data-privacy-policy/" target="_blank" style="transition: 0.3s all ease;">Silliman University Data Privacy Policy</a>
+            <a onclick="openSect('about-hidden')" href="#team-hidden" style="transition: 0.3s all ease;">Meet the
+              Team</a>
+            <a href="https://su.edu.ph/about/website-data-privacy-policy/" target="_blank"
+              style="transition: 0.3s all ease;">Website Privacy Policy</a>
+            <a href="https://su.edu.ph/silliman-university-data-privacy-policy/" target="_blank"
+              style="transition: 0.3s all ease;">Silliman University Data Privacy Policy</a>
           </div>
         </div>
 
-        <a href="#"><button class="sums-btn news-btn w3-bar-item w3-button  w3-hide-small w3-hide-medium m-0 w3-hover-red"
+        <a href="#"><button
+            class="sums-btn news-btn w3-bar-item w3-button  w3-hide-small w3-hide-medium m-0 w3-hover-red"
             style="transition: 0.3s; height: 100%; width: auto; min-width: 6%">NEWS</button></a>
-        <a href="#"><button class="sums-btn events-btn w3-bar-item w3-button  w3-hide-small w3-hide-medium m-0 w3-hover-red"
+        <a href="#"><button
+            class="sums-btn events-btn w3-bar-item w3-button  w3-hide-small w3-hide-medium m-0 w3-hover-red"
             style="transition: 0.3s; height: 100%; width: auto; min-width: 6%">EVENTS</button></a>
         <a href="https://soul.su.edu.ph/" target="_blank"><button
             class="w3-bar-item w3-button  w3-hide-small w3-hide-medium m-0 w3-hover-red"
@@ -602,9 +612,11 @@
             class="sums-btn sumsa-btn w3-bar-item w3-button w3-hide-small w3-hide-medium  m-0 w3-hover-red"
             style="transition: 0.3s; height: 100%; width: auto; min-width: 6%">
             SUMSA</button></a>
-        <div class="sums-btn dropdown w3-hide-small w3-hide-medium  m-0" style="transition: 0.3s; height: 100%; width: auto;">
+        <div class="sums-btn dropdown w3-hide-small w3-hide-medium  m-0"
+          style="transition: 0.3s; height: 100%; width: auto;">
           <button class=" allumni-btn dropbtn w3-bar-item w3-button w3-hide-small w3-hide-medium  m-0 w3-hover-red"
-            style="transition: 0.3s; height: 100%; width: auto; min-width: 6%">ALUMNI <i class="bi bi-caret-down-fill"></i></button>
+            style="transition: 0.3s; height: 100%; width: auto; min-width: 6%">ALUMNI <i
+              class="bi bi-caret-down-fill"></i></button>
           <div class="dropdown-content  ">
             <a href="#" style="transition: 0.3s all ease;">BATCH 1</a>
             <a href="#" style="transition: 0.3s all ease;">BATCH 2</a>
@@ -627,10 +639,12 @@
     aria-labelledby="offcanvasRightLabel" style="background-color: #009687f8; min-height: 500px; z-index: 90000;">
     <div class="offcanvas-header" style="padding-bottom: 0;">
       <div>
-        <img src="SUlogo.png" alt="" class="w3-image" style="width: 18.5vw; padding:0 5px; max-width: 90px; float: inline-start;">
-      <img src="img/SUMSlogo.png" class="w3-image" alt="" style="width: 18vw; padding:0 5px; max-width: 90px; float: inline-start;">
+        <img src="SUlogo.png" alt="" class="w3-image"
+          style="width: 18.5vw; padding:0 5px; max-width: 90px; float: inline-start;">
+        <img src="img/SUMSlogo.png" class="w3-image" alt=""
+          style="width: 18vw; padding:0 5px; max-width: 90px; float: inline-start;">
       </div>
-      
+
       <h5 class="offcanvas-title text-white" id="offcanvasRightLabel" style="font-size: 5vw;"></h5>
       <button type="button" class="btn-close " data-bs-dismiss="offcanvas" aria-label="Close"
         style=" margin-right: 5%;"></button>
@@ -638,23 +652,23 @@
     <div class="offcanvas-body d-grid text-white">
       <a href="index.html" class=" w3-button w3-padding border border-radius"
         style="transition: 0.3s; display: block;"><i class="bi bi-house"></i>Home</a>
-      <button onclick="document.getElementById('id01').style.display='block'"
-        class="w3-bar-item w3-button" style="transition: 0.3s; display: block; width: auto;"
-        data-bs-dismiss="offcanvas"><i class="bi bi-card-checklist"></i>Admission</button>
+      <button onclick="document.getElementById('id01').style.display='block'" class="w3-bar-item w3-button"
+        style="transition: 0.3s; display: block; width: auto;" data-bs-dismiss="offcanvas"><i
+          class="bi bi-card-checklist"></i>Admission</button>
       <a href="#" class="text-center p-0 m-0" style="text-decoration: none;"><button onclick="openSect('about-hidden')"
           class="w3-bar-item w3-button" style="width: 100%;" data-bs-dismiss="offcanvas">
           About</button></a>
       <a href="#" class="text-center p-0 m-0" style="transition: 0.3s; display: block;"><button
           onclick="openSect('contact')" class="w3-bar-item w3-button " data-bs-dismiss="offcanvas">
           News</button></a>
-      <button onclick="openSect('contact')" class="w3-bar-item w3-button  "
-        style="transition: 0.3s; display: block;" data-bs-dismiss="offcanvas">
+      <button onclick="openSect('contact')" class="w3-bar-item w3-button  " style="transition: 0.3s; display: block;"
+        data-bs-dismiss="offcanvas">
         Event</button>
-      <button onclick="openSect('contact')" class="w3-bar-item w3-button  "
-        style="transition: 0.3s; display: block;" data-bs-dismiss="offcanvas">
+      <button onclick="openSect('contact')" class="w3-bar-item w3-button  " style="transition: 0.3s; display: block;"
+        data-bs-dismiss="offcanvas">
         Contact</button>
-      <button onclick="openSect('faculty')" class="w3-bar-item w3-button  "
-        style="transition: 0.3s; display: block;" data-bs-dismiss="offcanvas">
+      <button onclick="openSect('faculty')" class="w3-bar-item w3-button  " style="transition: 0.3s; display: block;"
+        data-bs-dismiss="offcanvas">
         Faculty</button>
       <button onclick="openSect('sumsa')" class="sumsa-btn w3-bar-item w3-button  "
         style="transition: 0.3s; display: block;" data-bs-dismiss="offcanvas">
@@ -665,11 +679,12 @@
 
 
   <!-- MODAL ADMISSION -->
-  <div id="id01" class="w3-modal" >
+  <div id="id01" class="w3-modal">
     <div class="w3-modal-content w3-animate-top" style="margin-top: 20px; margin-bottom: 100px; overflow: hidden;">
       <header class="w3-container w3-teal" style="padding-top: 10px;">
-        <span onclick="document.getElementById('id01').style.display='none'"
-          class="w3-display-topright fs-3" style=" margin-top: 15px; margin-right: 25px;"><i class="bi bi-x-square w3-hover-text-red" style="transition: 0.3s;"></i></span>
+        <span onclick="document.getElementById('id01').style.display='none'" class="w3-display-topright fs-3"
+          style=" margin-top: 15px; margin-right: 25px;"><i class="bi bi-x-square w3-hover-text-red"
+            style="transition: 0.3s;"></i></span>
         <h2>ADMISSION REQUIREMENTS</h2>
       </header>
       <div class="w3-container w3-padding-16 w3-flat-clouds">
@@ -677,32 +692,39 @@
           <li>
             <ul>
               <p>
-              <li>
-                Must be a holder of any baccalaureate degree with GWAG (General Weighted Average Grade) of at least 85% or
+                <li>
+                  Must be a holder of any baccalaureate degree with GWAG (General Weighted Average Grade) of at least
+                  85% or
                   its equivalent (for SU graduate, at least 2.5 QPA).
-              </li>
-              <li>
-                Applicant must have taken the National Medical Admission Test (NMAT) with percentile rank of 60 or above with the validity of two (2) years.
-              </li>
-              <li>
-                Application of qualified students must be submitted to the Medical School starting March 2023 (thru e-mail sums@su.edu.ph).
-              </li>
-              <span class="w3-text-red">Deadline of submission is June 30, 2023.</span>
+                </li>
+                <li>
+                  Applicant must have taken the National Medical Admission Test (NMAT) with percentile rank of 60 or
+                  above with the validity of two (2) years.
+                </li>
+                <li>
+                  Application of qualified students must be submitted to the Medical School starting March 2023 (thru
+                  e-mail sums@su.edu.ph).
+                </li>
+                <span class="w3-text-red">Deadline of submission is June 30, 2023.</span>
               </p>
             </ul>
 
           </li>
-          <p> <a href="https://su.edu.ph/wp-content/uploads/2023/03/SUMS-Admission-Process-SY-2023-2024.pdf" style="color: red; font-weight: bold;" target="_blank"> 
-            <button class="btn btn-danger"><i class="bi bi-file-earmark-arrow-down"></i> VIEW THE ADMISSION PROCESS</button> </a> </p>
+          <p> <a href="https://su.edu.ph/wp-content/uploads/2023/03/SUMS-Admission-Process-SY-2023-2024.pdf"
+              style="color: red; font-weight: bold;" target="_blank">
+              <button class="btn btn-danger"><i class="bi bi-file-earmark-arrow-down"></i> VIEW THE ADMISSION
+                PROCESS</button> </a> </p>
           <li>
             <ul>
               <li>
-                <p> Must submit to the Medical School the following requirements as scanned copies from the original file
+                <p> Must submit to the Medical School the following requirements as scanned copies from the original
+                  file
                   (List can be viewed at su.edu.ph under ‘Registrar & Admissions – Admission Procedures’):</p>
               </li>
               <li>
-                <p style="font-weight: bold;"> <i> *E-MAIL THESE AS <span style="color: red;">ONE PDF FILE</span> FOLLOWING THE ORDER OF THE REQUIREMENTS
-                  AS LISTED BELOW.</i></p>
+                <p style="font-weight: bold;"> <i> *E-MAIL THESE AS <span style="color: red;">ONE PDF FILE</span>
+                    FOLLOWING THE ORDER OF THE REQUIREMENTS
+                    AS LISTED BELOW.</i></p>
               </li>
               <li>
                 <p style="font-weight: bold;">*All documents must be in PORTRAIT format.</p>
@@ -712,48 +734,61 @@
               </li>
               <ol type="1">
                 <li>
-                  <p> Duly accomplished Application Form with latest passport-size picture.</p> 
+                  <p> Duly accomplished Application Form with latest passport-size picture.</p>
                 </li>
-              <p>  <a href="https://su.edu.ph/wp-content/uploads/2023/03/SUMS-Application-Form-revised-2023.pdf" target="_blank" style=" font-weight: bold;">
-                  <button class="btn btn-danger"><i class="bi bi-file-earmark-arrow-down"></i> Download the form here</button> </a></p>  
+                <p> <a href="https://su.edu.ph/wp-content/uploads/2023/03/SUMS-Application-Form-revised-2023.pdf"
+                    target="_blank" style=" font-weight: bold;">
+                    <button class="btn btn-danger"><i class="bi bi-file-earmark-arrow-down"></i> Download the form
+                      here</button> </a></p>
                 <li>
-                  <p> Official Transcript of Records showing completion of a degree course and GWAG (General Weighted Average
+                  <p> Official Transcript of Records showing completion of a degree course and GWAG (General Weighted
+                    Average
                     Grade) of at least 85% or its equivalent (for SU graduate, at least 2.5 QPA). Attach an Honorable
                     Dismissal/Transfer Credential if not a graduate of Silliman University.
-                   <br><i> *For graduate of private schools, the transcript of record is validated by a Special Order from CHED. While
-                    graduate of public schools, authenticated copy of diploma or certificate of graduation must be presented.</i></p>          
+                    <br><i> *For graduate of private schools, the transcript of record is validated by a Special Order
+                      from CHED. While
+                      graduate of public schools, authenticated copy of diploma or certificate of graduation must be
+                      presented.</i>
+                  </p>
                 </li>
                 <li>
-                  <p> Certificate of percentage equivalent of GWAG (General Weighted Average Grade) of 85% or above from the
+                  <p> Certificate of percentage equivalent of GWAG (General Weighted Average Grade) of 85% or above from
+                    the
                     Registrar’s Office if not a graduate of Silliman University</p>
                 </li>
                 <li>
-                  <p> NMAT Official Result with percentile rank of 60 or above (Secure 2 original copies – 1 for SU and 1 for
+                  <p> NMAT Official Result with percentile rank of 60 or above (Secure 2 original copies – 1 for SU and
+                    1 for
                     personal file for PRC Board Exam use)
-                    *This must be the official copy of the result which they mail to the examinees. The electronic copy of NMAT
+                    *This must be the official copy of the result which they mail to the examinees. The electronic copy
+                    of NMAT
                     result will NOT be accepted.</p>
                 </li>
                 <li>
                   <p> Certificates of recommendation from two (2) professors in college.
-                    <br> Addressee: </p>
-                   <p> <ul style="list-style-type: none;">
-                      <li>
-                        <span style="font-weight: bold;">Dr. Walden R. Ursos</span>  
-                      </li>
-                      <li>
-                        Dean
-                      </li>
-                      <li>
-                        Silliman University Medical School (SUMS)
-                      </li>
-                      <li>
-                        Dumaguete City, Negros Oriental
-                      </li>
-                    </ul></p>
+                    <br> Addressee:
+                  </p>
+                  <p>
+                  <ul style="list-style-type: none;">
+                    <li>
+                      <span style="font-weight: bold;">Dr. Walden R. Ursos</span>
+                    </li>
+                    <li>
+                      Dean
+                    </li>
+                    <li>
+                      Silliman University Medical School (SUMS)
+                    </li>
+                    <li>
+                      Dumaguete City, Negros Oriental
+                    </li>
+                  </ul>
+                  </p>
                 </li>
                 <li>
                   <p> Three (3) Screenings of Hepatitis (any laboratory):</p>
-                  <p><ul style="list-style-type:circle;">
+                  <p>
+                  <ul style="list-style-type:circle;">
                     <li>
                       Hepatitis B Surface Antigen Result
                     </li>
@@ -763,13 +798,16 @@
                     <li>
                       Total Antibody to HB c Antigen Result
                     </li>
-                  </ul></p>
+                  </ul>
+                  </p>
                 </li>
                 <li>
                   <p> Psychological Exam Result (any office/clinic)
-                    <span class="w3-text-red"><br> * Also available at the Silliman University Guidance and Testing Center.</span> 
-                    <br> Contact E-mail: sumsguidance@su.edu.ph</p>
-           
+                    <span class="w3-text-red"><br> * Also available at the Silliman University Guidance and Testing
+                      Center.</span>
+                    <br> Contact E-mail: sumsguidance@su.edu.ph
+                  </p>
+
                 </li>
                 <li>
                   <p> Birth certificate issued by the NSO / PSA</p>
@@ -778,48 +816,52 @@
                   <p> Barangay Clearance</p>
                 </li>
                 <li>
-                  <p> Recommendation letter from latest employer with the Company letterhead and contact details (if with
-                    Employment History). <br> Addressee: 
-                    <p> <ul style="list-style-type: none;">
-                      <li>
-                        <span style="font-weight: bold;">Dr. Walden R. Ursos</span>  
-                      </li>
-                      <li>
-                        Dean
-                      </li>
-                      <li>
-                        Silliman University Medical School (SUMS)
-                      </li>
-                      <li>
-                        Dumaguete City, Negros Oriental
-                      </li>
-                    </ul></p>
+                  <p> Recommendation letter from latest employer with the Company letterhead and contact details (if
+                    with
+                    Employment History). <br> Addressee:
+                  <p>
+                  <ul style="list-style-type: none;">
+                    <li>
+                      <span style="font-weight: bold;">Dr. Walden R. Ursos</span>
+                    </li>
+                    <li>
+                      Dean
+                    </li>
+                    <li>
+                      Silliman University Medical School (SUMS)
+                    </li>
+                    <li>
+                      Dumaguete City, Negros Oriental
+                    </li>
+                  </ul>
+                  </p>
                 </li>
                 <li>
                   <p> COVID-19 Vaccination card/s (primary doses given, then include card for booster dose if given)
-                    </p>
+                  </p>
                 </li>
               </ol>
             </ul>
-            
+
             <p style="font-weight: bold;">
               *Only those with COMPLETE requirements will be evaluated. The deadline of submission is June 30, 2023.
             </p>
 
-            <li>
-              <p> Must undergo an interview with the Admissions Committee as soon as requirements for admission are
-                complied. <br>
-                A Face-to-Face interview will be conducted for residents within Negros Oriental. On the other hand, residents
-                outside Negros Oriental will have an online interview.</p> 
-            </li>
-            
+          <li>
+            <p> Must undergo an interview with the Admissions Committee as soon as requirements for admission are
+              complied. <br>
+              A Face-to-Face interview will be conducted for residents within Negros Oriental. On the other hand,
+              residents
+              outside Negros Oriental will have an online interview.</p>
+          </li>
+
           </li>
         </ol>
-        
-          
-          
-        
-        
+
+
+
+
+
         <br>
         <ul class="fs-6">
           <h5>The following students are not encouraged to apply:</h5>
@@ -831,7 +873,8 @@
         </ul>
       </div>
       <footer class="w3-container w3-metro-teal ">
-        <button onclick="document.getElementById('id01').style.display='none'" type="button" class="btn btn-secondary" style="float: right; margin-top: 2px;">Close</button>
+        <button onclick="document.getElementById('id01').style.display='none'" type="button" class="btn btn-secondary"
+          style="float: right; margin-top: 2px;">Close</button>
         <p>Updated: May 16, 2023</p>
       </footer>
     </div>
@@ -945,7 +988,7 @@
 
       </div>
     </div>
-    
+
 
 
 
@@ -959,15 +1002,23 @@
 
     <div class="container-fluid text-white w3-metro-teal" style="width: 100vw; height: 70vh;padding:0;">
       <div class="bg-video">
-        <img class="w3-image w3-hide-large w3-hide-medium" src="img/SUMS_COVER1.png" alt="" style="width: 100%; height: 100vh; object-fit: cover;">
-        <iframe class="bg-video__iframe w3-hide-small" src="https://www.youtube.com/embed/5bJvoDHiQww?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&mute=1" frameborder="0" allowfullscreen></iframe>
-        <div class="container w3-display-middle" >
-          <p class="text-center fs-5 py-3 justify-content text-align" style="background-color: rgba(0, 0, 0, 0.74); display: block; z-index: 1000; position: relative;">
-           <span class="w3-text-red fs-4">Silliman University</span> <span class="w3-text-green fs-4">Medical School</span>  stands as a beacon of excellence, nurturing the next generation of compassionate and competent healthcare professionals. With its strong academic foundation, modern facilities, and commitment to holistic medical education, the medical school continues to shape the future of healthcare in Dumaguete City, Negros Oriental, and beyond.
+        <img class="w3-image w3-hide-large w3-hide-medium" src="img/SUMS_COVER1.png" alt=""
+          style="width: 100%; height: 100vh; object-fit: cover;">
+        <iframe class="bg-video__iframe w3-hide-small"
+          src="https://www.youtube.com/embed/5bJvoDHiQww?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&mute=1"
+          frameborder="0" allowfullscreen></iframe>
+        <div class="container w3-display-middle">
+          <p class="text-center fs-5 py-3 justify-content text-align"
+            style="background-color: rgba(0, 0, 0, 0.74); display: block; z-index: 1000; position: relative;">
+            <span class="w3-text-red fs-4">Silliman University</span> <span class="w3-text-green fs-4">Medical
+              School</span> stands as a beacon of excellence, nurturing the next generation of compassionate and
+            competent healthcare professionals. With its strong academic foundation, modern facilities, and commitment
+            to holistic medical education, the medical school continues to shape the future of healthcare in Dumaguete
+            City, Negros Oriental, and beyond.
           </p>
         </div>
       </div>
-      
+
     </div>
 
     <style>
@@ -1108,21 +1159,26 @@
               </div>
             </div>
             <div>
-             <p class="w3-flat-concrete justify-content-center p-3 p-sm-5 text-align">The plan to establish what would later be the Silliman University Medical School started on October 20, 1997 when the first meeting of the Ad Hoc Committee was called. This was attended by Dr. Jonathan C. Amante, Prof. Reynaldo Y. Rivera, Dr. Brenda Diputado, Dr. Lynn Olegario and Dr. Erlinda Lim-Juan at the Cunningham Hall. This was a brain-storming meeting, covering issues on curriculum, physical plant, and other related
-              concerns.</p><br>
-             <p class="w3-flat-concrete justify-content-center p-3 p-sm-5 text-align">
-              The next day, Dr. Amante consulted with Dr. Fernando Sanchez in Manila, the latter being the Chairman of the Task Force
-              on Reformation of Medical Education and Executive Director of the Association of Philippine Medical
-              Colleges
-              (APMC). The
-              outcome of the meeting was reported to Silliman University President Dr. Agustin A. Pulido, Vice
-              President
-              Academic
-              Affairs Teresita Sy-Sinda and the members of the Ad Hoc Committee. A series of follow-up meetings
-              transpired
-              in Manila
-              until November 6, 1997 when the plan to hold a Symposium on Innovative Medical Curriculum was finalized.
-             </p><br>
+              <p class="w3-flat-concrete justify-content-center p-3 p-sm-5 text-align">The plan to establish what would
+                later be the Silliman University Medical School started on October 20, 1997 when the first meeting of
+                the Ad Hoc Committee was called. This was attended by Dr. Jonathan C. Amante, Prof. Reynaldo Y. Rivera,
+                Dr. Brenda Diputado, Dr. Lynn Olegario and Dr. Erlinda Lim-Juan at the Cunningham Hall. This was a
+                brain-storming meeting, covering issues on curriculum, physical plant, and other related
+                concerns.</p><br>
+              <p class="w3-flat-concrete justify-content-center p-3 p-sm-5 text-align">
+                The next day, Dr. Amante consulted with Dr. Fernando Sanchez in Manila, the latter being the Chairman of
+                the Task Force
+                on Reformation of Medical Education and Executive Director of the Association of Philippine Medical
+                Colleges
+                (APMC). The
+                outcome of the meeting was reported to Silliman University President Dr. Agustin A. Pulido, Vice
+                President
+                Academic
+                Affairs Teresita Sy-Sinda and the members of the Ad Hoc Committee. A series of follow-up meetings
+                transpired
+                in Manila
+                until November 6, 1997 when the plan to hold a Symposium on Innovative Medical Curriculum was finalized.
+              </p><br>
               <span id="dots">...</span><span id="more">
                 <p class="w3-flat-concrete justify-content-center p-3 p-sm-5 text-align">
                   The symposium was held at the Cunningham Hall on November 29, 1997, facilitated by the members of the
@@ -1133,52 +1189,58 @@
                   After two
                   more meetings in February and April 1998 in Manila of Dr. Amante and Dr. Sanchez with the Task Force
                   members, Dr. Reyes
-                  and Dr. Tantengco, a Workshop on Medical Curriculum planning was scheduled and was later implemented on
+                  and Dr. Tantengco, a Workshop on Medical Curriculum planning was scheduled and was later implemented
+                  on
                   April 24-25
                   1998. This was followed by a re-evaluation meeting in Manila on May 6, 1998.
                 </p>
-               <br>
+                <br>
                 <p class="w3-flat-concrete justify-content-center p-3 p-sm-5 text-align">
                   Meanwhile, the prospective Faculty Teachers’ Training was started on January 31, 1998 and almost every
-                Saturday
-                thereafter at the Cunningham Hall.
-                This was conducted by Prof. Reynaldo Rivera, University Registrar, Dr. Betsy Joy Tan, Dean of the
-                College
-                of
-                Education,
-                and Prof. Loreta Lachica, Director of the Office of Instruction. The training ended on June 6, 1998.
-                Subsequently, the University Academic Council endorsed on August 18, 1998 the Silliman University
-                Medical
-                School Program
-                proposal for opening the following school year 1999-2000. It was only during the Board Of Trustees
-                meeting
-                on January
-                11, 2003 that a decision was reached: to open the new Medical School in School Year 2004-2005, on the
-                basis
-                of an
-                updated feasibility study and provided that quality education is maintained.
+                  Saturday
+                  thereafter at the Cunningham Hall.
+                  This was conducted by Prof. Reynaldo Rivera, University Registrar, Dr. Betsy Joy Tan, Dean of the
+                  College
+                  of
+                  Education,
+                  and Prof. Loreta Lachica, Director of the Office of Instruction. The training ended on June 6, 1998.
+                  Subsequently, the University Academic Council endorsed on August 18, 1998 the Silliman University
+                  Medical
+                  School Program
+                  proposal for opening the following school year 1999-2000. It was only during the Board Of Trustees
+                  meeting
+                  on January
+                  11, 2003 that a decision was reached: to open the new Medical School in School Year 2004-2005, on the
+                  basis
+                  of an
+                  updated feasibility study and provided that quality education is maintained.
                 </p>
                 <br>
-               <p class="w3-flat-concrete justify-content-center p-3 p-sm-5 text-align">
-                An updated Feasibility Study was conducted by the 1998 Ad Hoc Committee, together with VPAA Dr. Everett
-                Mendoza,
-                Internal
-                Auditor Mr. Jenny Chiu and Prof. Reynaldo Y. Rivera. The results were later presented for re-evaluation
-                to
-                the Board of
-                Trustees on January 31, 2004. Finally, the Board of Trustees approved the Medical School Program on
-                March
-                20, 2004. Dr.
-                Agustin A. Pulido publicly announced the approval during the Silliman University Commencement Exercises
-                the
-                following
-                day. The Commission on Higher Education approved the program for School Year 2005-2006, during its 243rd
-                Commission en
-                banc meeting on April 25, 2005.
-               </p></span>
+                <p class="w3-flat-concrete justify-content-center p-3 p-sm-5 text-align">
+                  An updated Feasibility Study was conducted by the 1998 Ad Hoc Committee, together with VPAA Dr.
+                  Everett
+                  Mendoza,
+                  Internal
+                  Auditor Mr. Jenny Chiu and Prof. Reynaldo Y. Rivera. The results were later presented for
+                  re-evaluation
+                  to
+                  the Board of
+                  Trustees on January 31, 2004. Finally, the Board of Trustees approved the Medical School Program on
+                  March
+                  20, 2004. Dr.
+                  Agustin A. Pulido publicly announced the approval during the Silliman University Commencement
+                  Exercises
+                  the
+                  following
+                  day. The Commission on Higher Education approved the program for School Year 2005-2006, during its
+                  243rd
+                  Commission en
+                  banc meeting on April 25, 2005.
+                </p>
+              </span>
               <button type="button" class="btn btn-success" onclick="readMore()" id="historyBtn">READ
                 MORE</button>
-              </div>
+            </div>
           </div>
 
         </div>
@@ -1199,34 +1261,58 @@
         <div class=" col-sm-3 text-start justify-content-center">
           <img src="Dr.WRU pic.png" alt="Dr. Walden R. Ursos" class="w3-image w3-border reveal rounded-circle"
             style="box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;">
-            <p>
-              <br><b> <span class="fs-5">WALDEN R. URSOS, M.D. DPSBNM, Ms. Clin. Epi.</span> </b>
-              <br>Dean
-              <br>Silliman University Medical School</p>
+          <p>
+            <br><b> <span class="fs-5">WALDEN R. URSOS, M.D. DPSBNM, Ms. Clin. Epi.</span> </b>
+            <br>Dean
+            <br>Silliman University Medical School
+          </p>
         </div>
         <div class="col-sm-8 reveal">
           <div class="w3-padding-32 reveal fs-6"
-            style="background-color: rgba(255, 255, 255, 0.726); padding-left: 50px; padding-right: 50px; max-height: 480px; overflow-y: auto;"> 
-            <p> <span class="w3-text-green fs-2">"</span> Good day and a warm welcome to the virtual halls of Silliman University Medical School!</p> 
+            style="background-color: rgba(255, 255, 255, 0.726); padding-left: 50px; padding-right: 50px; max-height: 480px; overflow-y: auto;">
+            <p> <span class="w3-text-green fs-2">"</span> Good day and a warm welcome to the virtual halls of Silliman
+              University Medical School!</p>
 
-            <p>I am delighted to extend my heartfelt greetings to all visitors who have graced our website with their presence. As the Dean of this esteemed institution, it is my privilege to introduce you to the rich tapestry of knowledge, innovation, and compassion that defines our medical school.</p>  
-              
-            <p>Silliman University Medical School has a long-standing tradition of excellence in medical education, dating back to its founding in 2004. Throughout the years, we have nurtured generations of healthcare professionals who have made remarkable contributions to the field of medicine, both locally and internationally.</p> 
-              
-            <p>Here at Silliman, we believe that medicine is not just a profession, but a calling—an opportunity to make a profound difference in the lives of individuals and communities. Our commitment to holistic education extends beyond the classroom, as we strive to instill in our students the values of empathy, integrity, and lifelong learning.</p>  
-              
-             <p>As you navigate our website, you will discover a multitude of resources designed to provide you with a glimpse into the vibrant world of Silliman University Medical School. From our state-of-the-art facilities and well-equipped laboratories to our dedicated faculty and staff, we aim to foster an environment that nurtures intellectual curiosity and supports the pursuit of knowledge.</p> 
-              
-             <p>We take pride in our comprehensive curriculum, which combines theoretical knowledge with hands-on clinical experiences. Our students are exposed to a diverse range of medical specialties, ensuring that they are well-prepared to meet the challenges of a rapidly evolving healthcare landscape. Through collaborations with esteemed institutions and community outreach programs, we actively engage with the community to address healthcare needs and promote a culture of service.</p> 
-              
-             <p>I encourage you to explore our website thoroughly, as it offers a glimpse into the myriad opportunities available to aspiring healthcare professionals. Whether you are considering joining our esteemed institution as a student, seeking collaboration opportunities, or simply looking to expand your knowledge, our website serves as a gateway to your medical journey.</p> 
-              
-             <p>On behalf of the faculty, staff, and students of Silliman University Medical School, I extend my gratitude for your interest in our institution. We are privileged to share our vision, expertise, and passion for healthcare with you. Together, let us embark on a journey of discovery, innovation, and service as we strive to shape the future of medicine.</p> 
-              
-             <p>Welcome to Silliman University Medical School—a place where dreams take flight, and compassion finds its purpose.<span class="w3-text-green fs-2">"</span></p> 
-              
-             
-            
+            <p>I am delighted to extend my heartfelt greetings to all visitors who have graced our website with their
+              presence. As the Dean of this esteemed institution, it is my privilege to introduce you to the rich
+              tapestry of knowledge, innovation, and compassion that defines our medical school.</p>
+
+            <p>Silliman University Medical School has a long-standing tradition of excellence in medical education,
+              dating back to its founding in 2004. Throughout the years, we have nurtured generations of healthcare
+              professionals who have made remarkable contributions to the field of medicine, both locally and
+              internationally.</p>
+
+            <p>Here at Silliman, we believe that medicine is not just a profession, but a calling—an opportunity to make
+              a profound difference in the lives of individuals and communities. Our commitment to holistic education
+              extends beyond the classroom, as we strive to instill in our students the values of empathy, integrity,
+              and lifelong learning.</p>
+
+            <p>As you navigate our website, you will discover a multitude of resources designed to provide you with a
+              glimpse into the vibrant world of Silliman University Medical School. From our state-of-the-art facilities
+              and well-equipped laboratories to our dedicated faculty and staff, we aim to foster an environment that
+              nurtures intellectual curiosity and supports the pursuit of knowledge.</p>
+
+            <p>We take pride in our comprehensive curriculum, which combines theoretical knowledge with hands-on
+              clinical experiences. Our students are exposed to a diverse range of medical specialties, ensuring that
+              they are well-prepared to meet the challenges of a rapidly evolving healthcare landscape. Through
+              collaborations with esteemed institutions and community outreach programs, we actively engage with the
+              community to address healthcare needs and promote a culture of service.</p>
+
+            <p>I encourage you to explore our website thoroughly, as it offers a glimpse into the myriad opportunities
+              available to aspiring healthcare professionals. Whether you are considering joining our esteemed
+              institution as a student, seeking collaboration opportunities, or simply looking to expand your knowledge,
+              our website serves as a gateway to your medical journey.</p>
+
+            <p>On behalf of the faculty, staff, and students of Silliman University Medical School, I extend my
+              gratitude for your interest in our institution. We are privileged to share our vision, expertise, and
+              passion for healthcare with you. Together, let us embark on a journey of discovery, innovation, and
+              service as we strive to shape the future of medicine.</p>
+
+            <p>Welcome to Silliman University Medical School—a place where dreams take flight, and compassion finds its
+              purpose.<span class="w3-text-green fs-2">"</span></p>
+
+
+
           </div>
         </div>
 
@@ -1337,7 +1423,8 @@
 
     <div class="container team-visible">
 
-      <div class="row row-cols-1 row-cols-sm-3 row-cols-md-4 row-cols-lg-4 row-cols-xl-4 g-4 justify-content-center text-center">
+      <div
+        class="row row-cols-1 row-cols-sm-3 row-cols-md-4 row-cols-lg-4 row-cols-xl-4 g-4 justify-content-center text-center">
         <div class="col-xl-2 zoom">
           <div class="card h-100 shadow reveal">
             <img src="img/team_wru2.png" class="card-img-top" alt="...">
@@ -1414,17 +1501,19 @@
       <span class="w3-xlarge w3-bottombar  w3-padding-16 ">Get in touch</span>
     </div>
     <div class="container-fluid w3-theme-l5 reveal"
-    style="background-image: url('contact1.png'); margin: 0; padding: 0;">
-    <div class="container-fluid text-center m-0" style="background-color: rgba(0, 0, 0, 0.5); width: 100%;">
-      <div class="container text-white w3-padding-64">
-        <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar reveal">Contact Us</span></div>
+      style="background-image: url('contact1.png'); margin: 0; padding: 0;">
+      <div class="container-fluid text-center m-0" style="background-color: rgba(0, 0, 0, 0.5); width: 100%;">
+        <div class="container text-white w3-padding-64">
+          <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar reveal">Contact Us</span></div>
 
-        <p class="reveal">Visit our beautiful campus</p>
-        <p class="reveal"><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>  Silliman University, Dumaguete City</p>
-        <p class="reveal"><i class="fa fa-phone w3-text-teal w3-xlarge"></i>  (035) 420-1901 local 599 or (035) 422-5895</p>
-        <p class="reveal"><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>  sums@su.edu.ph</p>
-      </div>
-      <!-- <div class="w3-col m7">
+          <p class="reveal">Visit our beautiful campus</p>
+          <p class="reveal"><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>  Silliman University, Dumaguete City
+          </p>
+          <p class="reveal"><i class="fa fa-phone w3-text-teal w3-xlarge"></i>  (035) 420-1901 local 599 or (035)
+            422-5895</p>
+          <p class="reveal"><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>  sums@su.edu.ph</p>
+        </div>
+        <!-- <div class="w3-col m7">
         <form class="w3-container w3-card-4 w3-padding-16 w3-white" action="/action_page.php" target="_blank">
           <div class="w3-section">
             <label>Name</label>
@@ -1443,10 +1532,10 @@
           <button type="submit" class="w3-button w3-right w3-theme">Send</button>
         </form>
       </div> -->
+      </div>
     </div>
   </div>
-  </div>
-  
+
 
   <div class="mapouter sect">
     <div class="gmap_canvas"><iframe width="100%" height="100%" id="gmap_canvas"
@@ -1478,15 +1567,19 @@
     <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade" data-bs-ride="carousel"
       data-bs-pause="false">
       <div class="carousel-inner">
-        <h1 class="sums-scroll-icon w3-display-bottommiddle text-center text-white"
-          style="z-index: 10; bottom: 15%;"> <span class="w3-hide-small"><h1 style="padding: 10px 50px 10px 50px;"></h1> </span> 
-        
-        <span class="w3-hide-small" style="font-size: 10px; background-color: rgba(0, 0, 0, 0.5); padding: 5px 15px 5px 15px; border: #f2fcfe; border-radius: 5px;">SCROLL DOWN</span> <br>  
-        <a href="#mission-hidden" class="button scroll" style="background-color: rgba(0, 0, 0, 0.5);">
-            <span class="scroll-down-arrow"></span></a> 
-           </h1> 
-         
-          
+        <h1 class="sums-scroll-icon w3-display-bottommiddle text-center text-white" style="z-index: 10; bottom: 15%;">
+          <span class="w3-hide-small">
+            <h1 style="padding: 10px 50px 10px 50px;"></h1>
+          </span>
+
+          <span class="w3-hide-small"
+            style="font-size: 10px; background-color: rgba(0, 0, 0, 0.5); padding: 5px 15px 5px 15px; border: #f2fcfe; border-radius: 5px;">SCROLL
+            DOWN</span> <br>
+          <a href="#mission-hidden" class="button scroll" style="background-color: rgba(0, 0, 0, 0.5);">
+            <span class="scroll-down-arrow"></span></a>
+        </h1>
+
+
         <div class="carousel-item active">
           <img src="img/HISTORY.png" class="d-block w-100" alt="...">
         </div>
@@ -1500,7 +1593,8 @@
     </div>
     <div class="container">
       <!-- <div class="parallax2"></div> -->
-      <div class="row justify-content-center" style="margin-top: 2%; margin-bottom: 2%; scroll-margin-top: 3em;" id="mission-hidden">
+      <div class="row justify-content-center" style="margin-top: 2%; margin-bottom: 2%; scroll-margin-top: 3em;"
+        id="mission-hidden">
         <div class="col-10 w3-container justify-content-center pt-5">
           <div class="row justify-content-center sums-box reveal">
             <div class="col-md-3 w3-red text-center "
@@ -1586,7 +1680,8 @@
     </div>
 
     <!-- HISTORY HIDDEN-->
-    <div class="container-fluid w3-padding-32 w3-text-white w3-metro-teal w3-opacity-min" id="history-hidden" style="scroll-margin-top: 3em;">
+    <div class="container-fluid w3-padding-32 w3-text-white w3-metro-teal w3-opacity-min" id="history-hidden"
+      style="scroll-margin-top: 3em;">
       <div class="container text-center justify-content-center text-header reveal">
         HISTORY
       </div>
@@ -1609,21 +1704,26 @@
               </div>
             </div>
             <div>
-             <p class="w3-flat-concrete justify-content-center p-3 p-sm-5 text-align">The plan to establish what would later be the Silliman University Medical School started on October 20, 1997 when the first meeting of the Ad Hoc Committee was called. This was attended by Dr. Jonathan C. Amante, Prof. Reynaldo Y. Rivera, Dr. Brenda Diputado, Dr. Lynn Olegario and Dr. Erlinda Lim-Juan at the Cunningham Hall. This was a brain-storming meeting, covering issues on curriculum, physical plant, and other related
-              concerns.</p><br>
-             <p class="w3-flat-concrete justify-content-center p-3 p-sm-5 text-align">
-              The next day, Dr. Amante consulted with Dr. Fernando Sanchez in Manila, the latter being the Chairman of the Task Force
-              on Reformation of Medical Education and Executive Director of the Association of Philippine Medical
-              Colleges
-              (APMC). The
-              outcome of the meeting was reported to Silliman University President Dr. Agustin A. Pulido, Vice
-              President
-              Academic
-              Affairs Teresita Sy-Sinda and the members of the Ad Hoc Committee. A series of follow-up meetings
-              transpired
-              in Manila
-              until November 6, 1997 when the plan to hold a Symposium on Innovative Medical Curriculum was finalized.
-             </p><br>
+              <p class="w3-flat-concrete justify-content-center p-3 p-sm-5 text-align">The plan to establish what would
+                later be the Silliman University Medical School started on October 20, 1997 when the first meeting of
+                the Ad Hoc Committee was called. This was attended by Dr. Jonathan C. Amante, Prof. Reynaldo Y. Rivera,
+                Dr. Brenda Diputado, Dr. Lynn Olegario and Dr. Erlinda Lim-Juan at the Cunningham Hall. This was a
+                brain-storming meeting, covering issues on curriculum, physical plant, and other related
+                concerns.</p><br>
+              <p class="w3-flat-concrete justify-content-center p-3 p-sm-5 text-align">
+                The next day, Dr. Amante consulted with Dr. Fernando Sanchez in Manila, the latter being the Chairman of
+                the Task Force
+                on Reformation of Medical Education and Executive Director of the Association of Philippine Medical
+                Colleges
+                (APMC). The
+                outcome of the meeting was reported to Silliman University President Dr. Agustin A. Pulido, Vice
+                President
+                Academic
+                Affairs Teresita Sy-Sinda and the members of the Ad Hoc Committee. A series of follow-up meetings
+                transpired
+                in Manila
+                until November 6, 1997 when the plan to hold a Symposium on Innovative Medical Curriculum was finalized.
+              </p><br>
               <span id="dots">...</span><span id="more">
                 <p class="w3-flat-concrete justify-content-center p-3 p-sm-5 text-align">
                   The symposium was held at the Cunningham Hall on November 29, 1997, facilitated by the members of the
@@ -1634,52 +1734,58 @@
                   After two
                   more meetings in February and April 1998 in Manila of Dr. Amante and Dr. Sanchez with the Task Force
                   members, Dr. Reyes
-                  and Dr. Tantengco, a Workshop on Medical Curriculum planning was scheduled and was later implemented on
+                  and Dr. Tantengco, a Workshop on Medical Curriculum planning was scheduled and was later implemented
+                  on
                   April 24-25
                   1998. This was followed by a re-evaluation meeting in Manila on May 6, 1998.
                 </p>
-               <br>
+                <br>
                 <p class="w3-flat-concrete justify-content-center p-3 p-sm-5 text-align">
                   Meanwhile, the prospective Faculty Teachers’ Training was started on January 31, 1998 and almost every
-                Saturday
-                thereafter at the Cunningham Hall.
-                This was conducted by Prof. Reynaldo Rivera, University Registrar, Dr. Betsy Joy Tan, Dean of the
-                College
-                of
-                Education,
-                and Prof. Loreta Lachica, Director of the Office of Instruction. The training ended on June 6, 1998.
-                Subsequently, the University Academic Council endorsed on August 18, 1998 the Silliman University
-                Medical
-                School Program
-                proposal for opening the following school year 1999-2000. It was only during the Board Of Trustees
-                meeting
-                on January
-                11, 2003 that a decision was reached: to open the new Medical School in School Year 2004-2005, on the
-                basis
-                of an
-                updated feasibility study and provided that quality education is maintained.
+                  Saturday
+                  thereafter at the Cunningham Hall.
+                  This was conducted by Prof. Reynaldo Rivera, University Registrar, Dr. Betsy Joy Tan, Dean of the
+                  College
+                  of
+                  Education,
+                  and Prof. Loreta Lachica, Director of the Office of Instruction. The training ended on June 6, 1998.
+                  Subsequently, the University Academic Council endorsed on August 18, 1998 the Silliman University
+                  Medical
+                  School Program
+                  proposal for opening the following school year 1999-2000. It was only during the Board Of Trustees
+                  meeting
+                  on January
+                  11, 2003 that a decision was reached: to open the new Medical School in School Year 2004-2005, on the
+                  basis
+                  of an
+                  updated feasibility study and provided that quality education is maintained.
                 </p>
                 <br>
-               <p class="w3-flat-concrete justify-content-center p-3 p-sm-5 text-align">
-                An updated Feasibility Study was conducted by the 1998 Ad Hoc Committee, together with VPAA Dr. Everett
-                Mendoza,
-                Internal
-                Auditor Mr. Jenny Chiu and Prof. Reynaldo Y. Rivera. The results were later presented for re-evaluation
-                to
-                the Board of
-                Trustees on January 31, 2004. Finally, the Board of Trustees approved the Medical School Program on
-                March
-                20, 2004. Dr.
-                Agustin A. Pulido publicly announced the approval during the Silliman University Commencement Exercises
-                the
-                following
-                day. The Commission on Higher Education approved the program for School Year 2005-2006, during its 243rd
-                Commission en
-                banc meeting on April 25, 2005.
-               </p></span>
+                <p class="w3-flat-concrete justify-content-center p-3 p-sm-5 text-align">
+                  An updated Feasibility Study was conducted by the 1998 Ad Hoc Committee, together with VPAA Dr.
+                  Everett
+                  Mendoza,
+                  Internal
+                  Auditor Mr. Jenny Chiu and Prof. Reynaldo Y. Rivera. The results were later presented for
+                  re-evaluation
+                  to
+                  the Board of
+                  Trustees on January 31, 2004. Finally, the Board of Trustees approved the Medical School Program on
+                  March
+                  20, 2004. Dr.
+                  Agustin A. Pulido publicly announced the approval during the Silliman University Commencement
+                  Exercises
+                  the
+                  following
+                  day. The Commission on Higher Education approved the program for School Year 2005-2006, during its
+                  243rd
+                  Commission en
+                  banc meeting on April 25, 2005.
+                </p>
+              </span>
               <button type="button" class="btn btn-success" onclick="readMore()" id="historyBtn">READ
                 MORE</button>
-              </div>
+            </div>
           </div>
         </div>
 
@@ -1687,7 +1793,8 @@
       </div>
     </div>
     <!-- DEAN HIDDEN -->
-    <div class="container-fluid w3-padding-32 w3-text-white w3-metro-teal w3-opacity-min" id="dean-hidden" style="scroll-margin-top: 3em;">
+    <div class="container-fluid w3-padding-32 w3-text-white w3-metro-teal w3-opacity-min" id="dean-hidden"
+      style="scroll-margin-top: 3em;">
       <div class="container text-center justify-content-center text-header reveal">
         OUR DEAN
       </div>
@@ -1699,40 +1806,64 @@
           <div class=" col-sm-3 text-start justify-content-center">
             <img src="Dr.WRU pic.png" alt="Dr. Walden R. Ursos" class="w3-image w3-border reveal rounded-circle"
               style="box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;">
-              <p>
-                <br><b> <span class="fs-5">WALDEN R. URSOS, M.D. DPSBNM, Ms. Clin. Epi.</span> </b>
-                <br>Dean
-                <br>Silliman University Medical School</p>
+            <p>
+              <br><b> <span class="fs-5">WALDEN R. URSOS, M.D. DPSBNM, Ms. Clin. Epi.</span> </b>
+              <br>Dean
+              <br>Silliman University Medical School
+            </p>
           </div>
           <div class="col-sm-8 reveal">
             <div class="w3-padding-32 reveal fs-6"
-              style="background-color: rgba(255, 255, 255, 0.726); padding-left: 50px; padding-right: 50px; max-height: 480px; overflow-y: auto;"> 
-              <p> <span class="w3-text-green fs-2">"</span> Good day and a warm welcome to the virtual halls of Silliman University Medical School!</p> 
-  
-              <p>I am delighted to extend my heartfelt greetings to all visitors who have graced our website with their presence. As the Dean of this esteemed institution, it is my privilege to introduce you to the rich tapestry of knowledge, innovation, and compassion that defines our medical school.</p>  
-                
-              <p>Silliman University Medical School has a long-standing tradition of excellence in medical education, dating back to its founding in 2004. Throughout the years, we have nurtured generations of healthcare professionals who have made remarkable contributions to the field of medicine, both locally and internationally.</p> 
-                
-              <p>Here at Silliman, we believe that medicine is not just a profession, but a calling—an opportunity to make a profound difference in the lives of individuals and communities. Our commitment to holistic education extends beyond the classroom, as we strive to instill in our students the values of empathy, integrity, and lifelong learning.</p>  
-                
-               <p>As you navigate our website, you will discover a multitude of resources designed to provide you with a glimpse into the vibrant world of Silliman University Medical School. From our state-of-the-art facilities and well-equipped laboratories to our dedicated faculty and staff, we aim to foster an environment that nurtures intellectual curiosity and supports the pursuit of knowledge.</p> 
-                
-               <p>We take pride in our comprehensive curriculum, which combines theoretical knowledge with hands-on clinical experiences. Our students are exposed to a diverse range of medical specialties, ensuring that they are well-prepared to meet the challenges of a rapidly evolving healthcare landscape. Through collaborations with esteemed institutions and community outreach programs, we actively engage with the community to address healthcare needs and promote a culture of service.</p> 
-                
-               <p>I encourage you to explore our website thoroughly, as it offers a glimpse into the myriad opportunities available to aspiring healthcare professionals. Whether you are considering joining our esteemed institution as a student, seeking collaboration opportunities, or simply looking to expand your knowledge, our website serves as a gateway to your medical journey.</p> 
-                
-               <p>On behalf of the faculty, staff, and students of Silliman University Medical School, I extend my gratitude for your interest in our institution. We are privileged to share our vision, expertise, and passion for healthcare with you. Together, let us embark on a journey of discovery, innovation, and service as we strive to shape the future of medicine.</p> 
-                
-               <p>Welcome to Silliman University Medical School—a place where dreams take flight, and compassion finds its purpose.<span class="w3-text-green fs-2">"</span></p> 
-                
-               
-              
+              style="background-color: rgba(255, 255, 255, 0.726); padding-left: 50px; padding-right: 50px; max-height: 480px; overflow-y: auto;">
+              <p> <span class="w3-text-green fs-2">"</span> Good day and a warm welcome to the virtual halls of Silliman
+                University Medical School!</p>
+
+              <p>I am delighted to extend my heartfelt greetings to all visitors who have graced our website with their
+                presence. As the Dean of this esteemed institution, it is my privilege to introduce you to the rich
+                tapestry of knowledge, innovation, and compassion that defines our medical school.</p>
+
+              <p>Silliman University Medical School has a long-standing tradition of excellence in medical education,
+                dating back to its founding in 2004. Throughout the years, we have nurtured generations of healthcare
+                professionals who have made remarkable contributions to the field of medicine, both locally and
+                internationally.</p>
+
+              <p>Here at Silliman, we believe that medicine is not just a profession, but a calling—an opportunity to
+                make a profound difference in the lives of individuals and communities. Our commitment to holistic
+                education extends beyond the classroom, as we strive to instill in our students the values of empathy,
+                integrity, and lifelong learning.</p>
+
+              <p>As you navigate our website, you will discover a multitude of resources designed to provide you with a
+                glimpse into the vibrant world of Silliman University Medical School. From our state-of-the-art
+                facilities and well-equipped laboratories to our dedicated faculty and staff, we aim to foster an
+                environment that nurtures intellectual curiosity and supports the pursuit of knowledge.</p>
+
+              <p>We take pride in our comprehensive curriculum, which combines theoretical knowledge with hands-on
+                clinical experiences. Our students are exposed to a diverse range of medical specialties, ensuring that
+                they are well-prepared to meet the challenges of a rapidly evolving healthcare landscape. Through
+                collaborations with esteemed institutions and community outreach programs, we actively engage with the
+                community to address healthcare needs and promote a culture of service.</p>
+
+              <p>I encourage you to explore our website thoroughly, as it offers a glimpse into the myriad opportunities
+                available to aspiring healthcare professionals. Whether you are considering joining our esteemed
+                institution as a student, seeking collaboration opportunities, or simply looking to expand your
+                knowledge, our website serves as a gateway to your medical journey.</p>
+
+              <p>On behalf of the faculty, staff, and students of Silliman University Medical School, I extend my
+                gratitude for your interest in our institution. We are privileged to share our vision, expertise, and
+                passion for healthcare with you. Together, let us embark on a journey of discovery, innovation, and
+                service as we strive to shape the future of medicine.</p>
+
+              <p>Welcome to Silliman University Medical School—a place where dreams take flight, and compassion finds
+                its purpose.<span class="w3-text-green fs-2">"</span></p>
+
+
+
             </div>
           </div>
-  
+
         </div>
       </div>
-        </div>
+    </div>
     <!-- TEAM HIDDEN -->
     <div class="w3-center w3-padding-64 reveal" id="team-hidden" style="scroll-margin-top: 3em;">
       <span class="w3-xlarge w3-bottombar  w3-padding-16 ">SUMS Admin</span>
@@ -1740,7 +1871,8 @@
 
     <div class="container team-visible mb-5">
 
-      <div class="row row-cols-1 row-cols-sm-3 row-cols-md-4 row-cols-lg-4 row-cols-xl-4 g-4 justify-content-center text-center">
+      <div
+        class="row row-cols-1 row-cols-sm-3 row-cols-md-4 row-cols-lg-4 row-cols-xl-4 g-4 justify-content-center text-center">
         <div class="col-xl-2 zoom">
           <div class="card h-100 shadow reveal">
             <img src="img/team_wru2.png" class="card-img-top" alt="...">
@@ -1808,7 +1940,7 @@
       </div>
     </div>
 
-  
+
 
 
   </section>
@@ -1821,13 +1953,17 @@
     <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade" data-bs-ride="carousel"
       data-bs-pause="false">
       <div class="carousel-inner">
-        <h1 class="sums-scroll-icon w3-display-bottommiddle text-center text-white"
-          style="z-index: 10; bottom: 15%;"> <span class="w3-hide-small"><h1 style="padding: 10px 50px 10px 50px;"></h1> </span> 
-        
-        <span class="w3-hide-small" style="font-size: 10px; background-color: rgba(0, 0, 0, 0.5); padding: 5px 15px 5px 15px; border: #f2fcfe; border-radius: 5px;">SCROLL DOWN</span> <br>  
-        <a href="#" class="button scroll" style="background-color: rgba(0, 0, 0, 0.5);">
-            <span class="scroll-down-arrow"></span></a> 
-           </h1> 
+        <h1 class="sums-scroll-icon w3-display-bottommiddle text-center text-white" style="z-index: 10; bottom: 15%;">
+          <span class="w3-hide-small">
+            <h1 style="padding: 10px 50px 10px 50px;"></h1>
+          </span>
+
+          <span class="w3-hide-small"
+            style="font-size: 10px; background-color: rgba(0, 0, 0, 0.5); padding: 5px 15px 5px 15px; border: #f2fcfe; border-radius: 5px;">SCROLL
+            DOWN</span> <br>
+          <a href="#" class="button scroll" style="background-color: rgba(0, 0, 0, 0.5);">
+            <span class="scroll-down-arrow"></span></a>
+        </h1>
 
         <div class="carousel-item active">
           <img src="img/SUMSA_ELECTIONS_2023.png" class="d-block w-100" alt="...">
@@ -1856,13 +1992,17 @@
     <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade" data-bs-ride="carousel"
       data-bs-pause="false">
       <div class="carousel-inner">
-        <h1 class="sums-scroll-icon w3-display-bottommiddle text-center text-white"
-          style="z-index: 10; bottom: 15%;"> <span class="w3-hide-small"><h1 style="padding: 10px 50px 10px 50px;"></h1> </span> 
-        
-        <span class="w3-hide-small" style="font-size: 10px; background-color: rgba(0, 0, 0, 0.5); padding: 5px 15px 5px 15px; border: #f2fcfe; border-radius: 5px;">SCROLL DOWN</span> <br>  
-        <a href="#" class="button scroll" style="background-color: rgba(0, 0, 0, 0.5);">
-            <span class="scroll-down-arrow"></span></a> 
-           </h1> 
+        <h1 class="sums-scroll-icon w3-display-bottommiddle text-center text-white" style="z-index: 10; bottom: 15%;">
+          <span class="w3-hide-small">
+            <h1 style="padding: 10px 50px 10px 50px;"></h1>
+          </span>
+
+          <span class="w3-hide-small"
+            style="font-size: 10px; background-color: rgba(0, 0, 0, 0.5); padding: 5px 15px 5px 15px; border: #f2fcfe; border-radius: 5px;">SCROLL
+            DOWN</span> <br>
+          <a href="#" class="button scroll" style="background-color: rgba(0, 0, 0, 0.5);">
+            <span class="scroll-down-arrow"></span></a>
+        </h1>
 
         <div class="carousel-item active">
           <img src="img/SUMS_COVER1.png" class="d-block w-100 " alt="...">
@@ -1896,12 +2036,14 @@
       <div class="row w3-row-padding center justify-content-center">
         <div class="col-6 col-sm-2 p-2 zoom ">
           <div class="card" style="width: 100%;">
-            <a href="#" data-bs-toggle="modal" data-bs-target="#medicineModal"><img src="medicine.png" class="card-img-top" alt="..."></a>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#medicineModal"><img src="medicine.png"
+                class="card-img-top" alt="..."></a>
           </div>
         </div>
         <div class=" col-6 col-sm-2 p-2 zoom ">
           <div class="card" style="width: 100%;">
-            <a href="#" data-bs-toggle="modal" data-bs-target="#surgeryModal"><img src="surgery.png" class="card-img-top" alt="..."></a>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#surgeryModal"><img src="surgery.png"
+                class="card-img-top" alt="..."></a>
           </div>
         </div>
         <div class="col-6 col-sm-2 p-2 zoom ">
@@ -1955,9 +2097,10 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body w3-flat-clouds text-center p-sm-5">
-          <div class="row row-sm-4 row-cols-2 row-cols-sm-3 row-cols-lg-4 row-cols-xl-5 row-cols-xxl-6 center row-padding g-4">
-              <div class="col-xl-2 zoom">
-              <div class="card h-100 shadow reveal">
+          <div
+            class="row row-sm-4 row-cols-2 row-cols-sm-3 row-cols-lg-4 row-cols-xl-5 row-cols-xxl-5 center row-padding g-4">
+            <div class="col-xl-2 zoom p-1">
+              <div class="card h-100 shadow ">
                 <img src="img/User-avatar.png" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Dr. Ma. Lourdes E. Ursos</h5>
@@ -1966,8 +2109,8 @@
               </div>
             </div>
 
-            <div class="col-xl-2 zoom">
-              <div class="card h-100 shadow reveal">
+            <div class="col-xl-2 zoom p-1">
+              <div class="card h-100 shadow ">
                 <img src="img/User-avatar.png" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Dr. Mae Anne S. Aum</h5>
@@ -1976,8 +2119,8 @@
               </div>
             </div>
 
-            <div class="col-xl-2 zoom">
-              <div class="card h-100 shadow reveal">
+            <div class="col-xl-2 zoom p-1">
+              <div class="card h-100 shadow">
                 <img src="img/User-avatar.png" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Dr. Jennifer P. Emperado</h5>
@@ -1986,8 +2129,8 @@
               </div>
             </div>
 
-            <div class="col-xl-2 zoom">
-              <div class="card h-100 shadow reveal">
+            <div class="col-xl-2 zoom p-1">
+              <div class="card h-100 shadow ">
                 <img src="img/User-avatar.png" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Dr. Jennifer L. Merecido</h5>
@@ -1996,8 +2139,8 @@
               </div>
             </div>
 
-            <div class="col-xl-2 zoom">
-              <div class="card h-100 shadow reveal">
+            <div class="col-xl-2 zoom p-1" >
+              <div class="card h-100 shadow ">
                 <img src="img/User-avatar.png" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Dr. Rowena T. Samares</h5>
@@ -2006,8 +2149,8 @@
               </div>
             </div>
 
-            <div class="col-xl-2 zoom">
-              <div class="card h-100 shadow reveal">
+            <div class="col-xl-2 zoom p-1">
+              <div class="card h-100 shadow">
                 <img src="img/User-avatar.png" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Dr. Rodella N. Vidal</h5>
@@ -2025,461 +2168,465 @@
     </div>
   </div>
   <!-- MEDICINE MODAL -->
-  <div class="faculty-modal modal fade" id="medicineModal" tabindex="-1" data-bs-backdrop="static" aria-hidden="true" style="z-index: 99999;">
-  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
-    <div class="modal-content">
-      <div class="modal-header w3-metro-teal">
-        <h1 class="modal-title fs-5" id="fcmModalLabel">DEPARTMENT OF MEDICINE</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body w3-flat-clouds text-center p-sm-5">
-        <div class="row row-sm-4 row-cols-2 row-cols-sm-3 row-cols-lg-4 row-cols-xl-5 row-cols-xxl-6 center row-padding g-4">
-          <div class="col-xl-2 zoom">
-            <div class="card h-100 shadow ">
-              <img src="img/User-avatar.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Dr. Edna V. Alcantara</h5>
-                <p class="card-text"></p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-2 zoom">
-            <div class="card h-100 shadow ">
-              <img src="img/User-avatar.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Dr. Jonathan C. Amante</h5>
-                <p class="card-text"></p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-2 zoom">
-            <div class="card h-100 shadow">
-              <img src="img/User-avatar.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Dr. Ma. Isabel M. Arco</h5>
-                <p class="card-text"></p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-2 zoom">
-            <div class="card h-100 shadow ">
-              <img src="img/User-avatar.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Dr. Chuckie Miguel A. Bacolod</h5>
-                <p class="card-text"></p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-2 zoom">
-            <div class="card h-100 shadow ">
-              <img src="img/User-avatar.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Dr. Gideon J. Caballes</h5>
-                <p class="card-text"></p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-2 zoom">
-            <div class="card h-100 shadow ">
-              <img src="img/User-avatar.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Dr. Brian Joseph M. Calinawagan</h5>
-                <p class="card-text"></p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-2 zoom">
-            <div class="card h-100 shadow ">
-              <img src="img/User-avatar.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Dr. Hannah Candace S. Catacutan</h5>
-                <p class="card-text"></p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-2 zoom">
-            <div class="card h-100 shadow ">
-              <img src="img/User-avatar.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Dr. Leah Antoinette C. Chang</h5>
-                <p class="card-text"></p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-2 zoom">
-            <div class="card h-100 shadow">
-              <img src="img/User-avatar.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Dr. Junabeth C. Credo</h5>
-                <p class="card-text"></p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-2 zoom">
-            <div class="card h-100 shadow ">
-              <img src="img/User-avatar.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Dr. Dehuel B. Cuyacot</h5>
-                <p class="card-text"></p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-2 zoom">
-            <div class="card h-100 shadow ">
-              <img src="img/User-avatar.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Dr. Dean Carlo S. Dumalagan</h5>
-                <p class="card-text"></p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-2 zoom">
-            <div class="card h-100 shadow ">
-              <img src="img/User-avatar.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Dr. Agnes Lorrainne M. Evasan</h5>
-                <p class="card-text"></p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-2 zoom">
-            <div class="card h-100 shadow ">
-              <img src="img/User-avatar.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Dr. Mansueto M. Gumban</h5>
-                <p class="card-text"></p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-2 zoom">
-            <div class="card h-100 shadow ">
-              <img src="img/User-avatar.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Dr. Geena Priscila M. Labaco</h5>
-                <p class="card-text"></p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-2 zoom">
-            <div class="card h-100 shadow ">
-              <img src="img/User-avatar.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Dr. Caesar Antonio O. Ligo</h5>
-                <p class="card-text"></p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-2 zoom">
-            <div class="card h-100 shadow ">
-              <img src="img/User-avatar.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Dr. Christian Emmanuel T. Lim</h5>
-                <p class="card-text"></p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-2 zoom">
-            <div class="card h-100 shadow ">
-              <img src="img/User-avatar.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Dr. Marie Krisca D. Liu</h5>
-                <p class="card-text"></p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-2 zoom">
-            <div class="card h-100 shadow ">
-              <img src="img/User-avatar.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Dr. Samuel S. Martinez</h5>
-                <p class="card-text"></p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-2 zoom">
-            <div class="card h-100 shadow ">
-              <img src="img/User-avatar.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Dr. Jackie Vincent V. Omandam</h5>
-                <p class="card-text"></p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-2 zoom">
-            <div class="card h-100 shadow ">
-              <img src="img/User-avatar.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Dr. Karen Mae A. Sayson</h5>
-                <p class="card-text"></p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-2 zoom">
-            <div class="card h-100 shadow ">
-              <img src="img/User-avatar.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Dr. Karen G. Sobere Yu</h5>
-                <p class="card-text"></p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-2 zoom">
-            <div class="card h-100 shadow">
-              <img src="img/User-avatar.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Dr. Bobbin G. Sy</h5>
-                <p class="card-text"></p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-2 zoom">
-            <div class="card h-100 shadow ">
-              <img src="img/User-avatar.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Dr. Sherwin G. Tiamzon</h5>
-                <p class="card-text"></p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-2 zoom">
-            <div class="card h-100 shadow ">
-              <img src="img/User-avatar.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Dr. Maria Joscel D. Torres</h5>
-                <p class="card-text"></p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-2 zoom">
-            <div class="card h-100 shadow ">
-              <img src="img/User-avatar.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Dr. Proceso Marc F. Udarbe</h5>
-                <p class="card-text"></p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-2 zoom">
-            <div class="card h-100 shadow">
-              <img src="img/User-avatar.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Dr. Maria Milagros D. Uy</h5>
-                <p class="card-text"></p>
-              </div>
-            </div>
-          </div>
-
+  <div class="faculty-modal modal fade" id="medicineModal" tabindex="-1" data-bs-backdrop="static" aria-hidden="true"
+    style="z-index: 99999;">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+      <div class="modal-content">
+        <div class="modal-header w3-metro-teal">
+          <h1 class="modal-title fs-5" id="fcmModalLabel">DEPARTMENT OF MEDICINE</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-      </div>
-      <div class="modal-footer w3-flat-wet-asphalt">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <div class="modal-body w3-flat-clouds text-center p-sm-5">
+          <div
+            class="row row-sm-4 row-cols-2 row-cols-sm-3 row-cols-lg-4 row-cols-xl-5 row-cols-xxl-5 center row-padding g-4">
+            <div class="col-xl-2 zoom p-1">
+              <div class="card h-100 shadow ">
+                <img src="img/User-avatar.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Dr. Edna V. Alcantara</h5>
+                  <p class="card-text"></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-2 zoom p-1">
+              <div class="card h-100 shadow ">
+                <img src="img/User-avatar.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Dr. Jonathan C. Amante</h5>
+                  <p class="card-text"></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-2 zoom p-1">
+              <div class="card h-100 shadow">
+                <img src="img/User-avatar.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Dr. Ma. Isabel M. Arco</h5>
+                  <p class="card-text"></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-2 zoom p-1">
+              <div class="card h-100 shadow ">
+                <img src="img/User-avatar.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Dr. Chuckie Miguel A. Bacolod</h5>
+                  <p class="card-text"></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-2 zoom p-1">
+              <div class="card h-100 shadow ">
+                <img src="img/User-avatar.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Dr. Gideon J. Caballes</h5>
+                  <p class="card-text"></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-2 zoom p-1">
+              <div class="card h-100 shadow ">
+                <img src="img/User-avatar.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Dr. Brian Joseph M. Calinawagan</h5>
+                  <p class="card-text"></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-2 zoom p-1">
+              <div class="card h-100 shadow ">
+                <img src="img/User-avatar.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Dr. Hannah Candace S. Catacutan</h5>
+                  <p class="card-text"></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-2 zoom p-1">
+              <div class="card h-100 shadow ">
+                <img src="img/User-avatar.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Dr. Leah Antoinette C. Chang</h5>
+                  <p class="card-text"></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-2 zoom p-1">
+              <div class="card h-100 shadow">
+                <img src="img/User-avatar.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Dr. Junabeth C. Credo</h5>
+                  <p class="card-text"></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-2 zoom p-1">
+              <div class="card h-100 shadow ">
+                <img src="img/User-avatar.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Dr. Dehuel B. Cuyacot</h5>
+                  <p class="card-text"></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-2 zoom p-1">
+              <div class="card h-100 shadow ">
+                <img src="img/User-avatar.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Dr. Dean Carlo S. Dumalagan</h5>
+                  <p class="card-text"></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-2 zoom p-1">
+              <div class="card h-100 shadow ">
+                <img src="img/User-avatar.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Dr. Agnes Lorrainne M. Evasan</h5>
+                  <p class="card-text"></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-2 zoom p-1">
+              <div class="card h-100 shadow ">
+                <img src="img/User-avatar.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Dr. Mansueto M. Gumban</h5>
+                  <p class="card-text"></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-2 zoom p-1">
+              <div class="card h-100 shadow ">
+                <img src="img/User-avatar.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Dr. Geena Priscila M. Labaco</h5>
+                  <p class="card-text"></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-2 zoom p-1">
+              <div class="card h-100 shadow ">
+                <img src="img/User-avatar.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Dr. Caesar Antonio O. Ligo</h5>
+                  <p class="card-text"></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-2 zoom p-1">
+              <div class="card h-100 shadow ">
+                <img src="img/User-avatar.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Dr. Christian Emmanuel T. Lim</h5>
+                  <p class="card-text"></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-2 zoom p-1">
+              <div class="card h-100 shadow ">
+                <img src="img/User-avatar.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Dr. Marie Krisca D. Liu</h5>
+                  <p class="card-text"></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-2 zoom p-1">
+              <div class="card h-100 shadow ">
+                <img src="img/User-avatar.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Dr. Samuel S. Martinez</h5>
+                  <p class="card-text"></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-2 zoom p-1">
+              <div class="card h-100 shadow ">
+                <img src="img/User-avatar.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Dr. Jackie Vincent V. Omandam</h5>
+                  <p class="card-text"></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-2 zoom p-1">
+              <div class="card h-100 shadow ">
+                <img src="img/User-avatar.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Dr. Karen Mae A. Sayson</h5>
+                  <p class="card-text"></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-2 zoom p-1">
+              <div class="card h-100 shadow ">
+                <img src="img/User-avatar.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Dr. Karen G. Sobere Yu</h5>
+                  <p class="card-text"></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-2 zoom p-1">
+              <div class="card h-100 shadow">
+                <img src="img/User-avatar.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Dr. Bobbin G. Sy</h5>
+                  <p class="card-text"></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-2 zoom p-1">
+              <div class="card h-100 shadow ">
+                <img src="img/User-avatar.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Dr. Sherwin G. Tiamzon</h5>
+                  <p class="card-text"></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-2 zoom p-1">
+              <div class="card h-100 shadow ">
+                <img src="img/User-avatar.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Dr. Maria Joscel D. Torres</h5>
+                  <p class="card-text"></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-2 zoom p-1">
+              <div class="card h-100 shadow ">
+                <img src="img/User-avatar.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Dr. Proceso Marc F. Udarbe</h5>
+                  <p class="card-text"></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-2 zoom p-1">
+              <div class="card h-100 shadow">
+                <img src="img/User-avatar.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Dr. Maria Milagros D. Uy</h5>
+                  <p class="card-text"></p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="modal-footer w3-flat-wet-asphalt">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
       </div>
     </div>
   </div>
-</div>
   <!-- SURGERY MODAL -->
-  <div class="faculty-modal modal fade" id="surgeryModal" tabindex="-1" data-bs-backdrop="static" aria-hidden="true" style="z-index: 99998;">
-  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
-    <div class="modal-content">
-      <div class="modal-header w3-metro-teal">
-        <h1 class="modal-title fs-5 center" id="fcmModalLabel">DEPARTMENT OF SURGERY</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body w3-flat-clouds text-center p-sm-5">
-        <div class="row row-sm-4 row-cols-2 row-cols-sm-3 row-cols-lg-4 row-cols-xl-5 row-cols-xxl-6 center row-padding g-4">
-          <div class="col-xl-2 zoom">
-            <div class="card h-100 shadow ">
-              <img src="img/User-avatar.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Dr. Michael Angelo A. Singco</h5>
-                <p class="card-text">Subject Coordinator</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-2 zoom">
-            <div class="card h-100 shadow">
-              <img src="img/User-avatar.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Dr. Joesalin R. Alfeche III</h5>
-                <p class="card-text"></p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-2 zoom">
-            <div class="card h-100 shadow">
-              <img src="img/User-avatar.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Dr. Daryl M. Apla-on</h5>
-                <p class="card-text"></p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-2 zoom">
-            <div class="card h-100 shadow ">
-              <img src="img/User-avatar.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Dr. Benjamin Jose D. Bautista Jr.</h5>
-                <p class="card-text"></p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-2 zoom">
-            <div class="card h-100 shadow ">
-              <img src="img/User-avatar.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Dr. Christian N. Casamayor</h5>
-                <p class="card-text"></p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-2 zoom">
-            <div class="card h-100 shadow ">
-              <img src="img/User-avatar.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Dr. Kerwin Mark L. Gubantes</h5>
-                <p class="card-text"></p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-2 zoom">
-            <div class="card h-100 shadow ">
-              <img src="img/User-avatar.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Dr. Florencita  N. Jordan</h5>
-                <p class="card-text"></p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-2 zoom">
-            <div class="card h-100 shadow ">
-              <img src="img/User-avatar.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Dr. Alfred J. Miralles</h5>
-                <p class="card-text"></p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-2 zoom">
-            <div class="card h-100 shadow ">
-              <img src="img/User-avatar.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Dr. Danilo V. Olegario</h5>
-                <p class="card-text"></p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-2 zoom">
-            <div class="card h-100 shadow ">
-              <img src="img/User-avatar.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Dr. Mark Artemio T. Reyes</h5>
-                <p class="card-text"></p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-2 zoom">
-            <div class="card h-100 shadow ">
-              <img src="img/User-avatar.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Dr. Earnest John B. Tenorio</h5>
-                <p class="card-text"></p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-2 zoom">
-            <div class="card h-100 shadow ">
-              <img src="img/User-avatar.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Dr. Laurence Michael N. Vera Cruz</h5>
-                <p class="card-text"></p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-2 zoom">
-            <div class="card h-100 shadow ">
-              <img src="img/User-avatar.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Dr. Lorenzo N. Vera Cruz, Jr.</h5>
-                <p class="card-text"></p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-2 zoom">
-            <div class="card h-100 shadow ">
-              <img src="img/User-avatar.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Dr. Frances Hope S. Yap</h5>
-                <p class="card-text"></p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-2 zoom">
-            <div class="card h-100 shadow ">
-              <img src="img/User-avatar.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Dr. Daryle Jason G. Yu</h5>
-                <p class="card-text"></p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-2 zoom">
-            <div class="card h-100 shadow ">
-              <img src="img/User-avatar.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Dr. Janice Marie J. Yu</h5>
-                <p class="card-text"></p>
-              </div>
-            </div>
-          </div>
-
+  <div class="faculty-modal modal fade" id="surgeryModal" tabindex="-1" data-bs-backdrop="static" aria-hidden="true"
+    style="z-index: 99998;">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+      <div class="modal-content">
+        <div class="modal-header w3-metro-teal">
+          <h1 class="modal-title fs-5 center" id="fcmModalLabel">DEPARTMENT OF SURGERY</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-      </div>
-      <div class="modal-footer w3-flat-wet-asphalt">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <div class="modal-body w3-flat-clouds text-center p-sm-5">
+          <div
+            class="row row-sm-4 row-cols-2 row-cols-sm-3 row-cols-lg-4 row-cols-xl-5 row-cols-xxl-5 center row-padding g-4">
+            <div class="col-xl-2 zoom p-1">
+              <div class="card h-100 shadow ">
+                <img src="img/User-avatar.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Dr. Michael Angelo A. Singco</h5>
+                  <p class="card-text">Subject Coordinator</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-2 zoom p-1">
+              <div class="card h-100 shadow">
+                <img src="img/User-avatar.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Dr. Joesalin R. Alfeche III</h5>
+                  <p class="card-text"></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-2 zoom p-1">
+              <div class="card h-100 shadow">
+                <img src="img/User-avatar.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Dr. Daryl M. Apla-on</h5>
+                  <p class="card-text"></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-2 zoom p-1">
+              <div class="card h-100 shadow ">
+                <img src="img/User-avatar.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Dr. Benjamin Jose D. Bautista Jr.</h5>
+                  <p class="card-text"></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-2 zoom p-1">
+              <div class="card h-100 shadow ">
+                <img src="img/User-avatar.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Dr. Christian N. Casamayor</h5>
+                  <p class="card-text"></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-2 zoom p-1">
+              <div class="card h-100 shadow ">
+                <img src="img/User-avatar.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Dr. Kerwin Mark L. Gubantes</h5>
+                  <p class="card-text"></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-2 zoom p-1">
+              <div class="card h-100 shadow ">
+                <img src="img/User-avatar.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Dr. Florencita N. Jordan</h5>
+                  <p class="card-text"></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-2 zoom p-1">
+              <div class="card h-100 shadow ">
+                <img src="img/User-avatar.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Dr. Alfred J. Miralles</h5>
+                  <p class="card-text"></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-2 zoom p-1">
+              <div class="card h-100 shadow ">
+                <img src="img/User-avatar.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Dr. Danilo V. Olegario</h5>
+                  <p class="card-text"></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-2 zoom p-1">
+              <div class="card h-100 shadow ">
+                <img src="img/User-avatar.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Dr. Mark Artemio T. Reyes</h5>
+                  <p class="card-text"></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-2 zoom p-1">
+              <div class="card h-100 shadow ">
+                <img src="img/User-avatar.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Dr. Earnest John B. Tenorio</h5>
+                  <p class="card-text"></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-2 zoom p-1">
+              <div class="card h-100 shadow ">
+                <img src="img/User-avatar.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Dr. Laurence Michael N. Vera Cruz</h5>
+                  <p class="card-text"></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-2 zoom p-1">
+              <div class="card h-100 shadow ">
+                <img src="img/User-avatar.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Dr. Lorenzo N. Vera Cruz, Jr.</h5>
+                  <p class="card-text"></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-2 zoom p-1">
+              <div class="card h-100 shadow ">
+                <img src="img/User-avatar.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Dr. Frances Hope S. Yap</h5>
+                  <p class="card-text"></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-2 zoom p-1">
+              <div class="card h-100 shadow ">
+                <img src="img/User-avatar.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Dr. Daryle Jason G. Yu</h5>
+                  <p class="card-text"></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-2 zoom p-1">
+              <div class="card h-100 shadow ">
+                <img src="img/User-avatar.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Dr. Janice Marie J. Yu</h5>
+                  <p class="card-text"></p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="modal-footer w3-flat-wet-asphalt">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
 
 
@@ -2509,13 +2656,15 @@
       <div class="container-fluid text-center m-0" style="background-color: rgba(0, 0, 0, 0.5); width: 100%;">
         <div class="container text-white w3-padding-64">
           <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar reveal">Contact Us</span></div>
-  
+
           <p class="reveal">Visit our beautiful campus</p>
-          <p class="reveal"><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>  Silliman University, Dumaguete City</p>
-          <p class="reveal"><i class="fa fa-phone w3-text-teal w3-xlarge"></i>  (035) 420-1901 local 599 or (035) 422-5895</p>
+          <p class="reveal"><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>  Silliman University, Dumaguete City
+          </p>
+          <p class="reveal"><i class="fa fa-phone w3-text-teal w3-xlarge"></i>  (035) 420-1901 local 599 or (035)
+            422-5895</p>
           <p class="reveal"><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>  sums@su.edu.ph</p>
         </div>
-                <!-- <div class="w3-col m7">
+        <!-- <div class="w3-col m7">
           <form class="w3-container w3-card-4 w3-padding-16 w3-white" action="/action_page.php" target="_blank">
             <div class="w3-section">
               <label>Name</label>
@@ -2596,20 +2745,22 @@
       <div class="footer">
         <div class="footer-row">
           <ul>
-          <li><a href="#" onclick="openSect('contact')">Contact us</a></li>
-          <li><a href="https://soul.su.edu.ph/" target="_blank">mySOUL</a></li>
-          <li><a href="https://su.edu.ph/about/website-data-privacy-policy/" target="_blank">Website Privacy Policy</a></li>
-          <li><a href="https://su.edu.ph/silliman-university-data-privacy-policy/" target="_blank">SU Data Privacy Policy</a></li>
-          <li><a href="https://su.edu.ph/services/careers/" target="_blank">Careers at Silliman</a></li>
+            <li><a href="#" onclick="openSect('contact')">Contact us</a></li>
+            <li><a href="https://soul.su.edu.ph/" target="_blank">mySOUL</a></li>
+            <li><a href="https://su.edu.ph/about/website-data-privacy-policy/" target="_blank">Website Privacy
+                Policy</a></li>
+            <li><a href="https://su.edu.ph/silliman-university-data-privacy-policy/" target="_blank">SU Data Privacy
+                Policy</a></li>
+            <li><a href="https://su.edu.ph/services/careers/" target="_blank">Careers at Silliman</a></li>
           </ul>
-          </div>
+        </div>
       </div>
     </div>
     <div class="w3-row-padding">
       <div class="w3-third">
         <h3></h3>
         <p></p>
-        
+
       </div>
 
       <div class="w3-third text-center">
@@ -2620,16 +2771,17 @@
             <span class="w3-large w3-text-red w3-wide">SILLIMAN UNIVERSITY</span><br>
             <span class="w3-large w3-text-teal">MEDICAL SCHOOL</span>
             <br>
-            <span class="w3-text-white" style="font-size: x-small;">All rights reserved <i class="bi bi-c-circle"></i> 2023 </span>
+            <span class="w3-text-white" style="font-size: x-small;">All rights reserved <i class="bi bi-c-circle"></i>
+              2023 </span>
           </li>
           <div class="container" style="width: 100px;">
-            <li >
+            <li>
               <img src="" class="w3-left w3-margin-right" style="width:50px">
               <span></span>
               <span></span>
             </li>
           </div>
-          
+
         </ul>
         <h4></h4>
         <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Facebook"><i
@@ -2666,18 +2818,18 @@
   <script>
     var btn = $('#button');
 
-$(window).scroll(function() {
-  if ($(window).scrollTop() > 800) {
-    btn.addClass('show');
-  } else {
-    btn.removeClass('show');
-  }
-});
+    $(window).scroll(function () {
+      if ($(window).scrollTop() > 800) {
+        btn.addClass('show');
+      } else {
+        btn.removeClass('show');
+      }
+    });
 
-btn.on('click', function(e) {
-  e.preventDefault();
-  $('html, body').animate({scrollTop:0}, '800');
-});
+    btn.on('click', function (e) {
+      e.preventDefault();
+      $('html, body').animate({ scrollTop: 0 }, '800');
+    });
 
   </script>
 
@@ -2824,13 +2976,13 @@ btn.on('click', function(e) {
     window.addEventListener('load', fadeOutEffect);
   </script>
 
-<script>
+  <script>
 
-  jQuery("#my_styles .sums-btn").click(function(){
-        jQuery("#my_styles .sums-btn").removeClass('actives');
-        jQuery(this).toggleClass('actives'); 
-});
-</script>
+    jQuery("#my_styles .sums-btn").click(function () {
+      jQuery("#my_styles .sums-btn").removeClass('actives');
+      jQuery(this).toggleClass('actives');
+    });
+  </script>
 
 </body>
 
