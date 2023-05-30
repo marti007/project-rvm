@@ -1,0 +1,48 @@
+.val-mid-nav:hover{
+  background-color: aqua;
+  transition: 0.3s all ease;
+  cursor: pointer;
+}
+
+.title-word {
+  animation: color-animation 4s linear infinite;
+  
+}
+
+.title-word-1 {
+  --color-1: #dddf53;
+  --color-2: #3D8DAE;
+  --color-3: #E4A9A8;
+  --color-4: #fc2e2a;
+}
+
+.title-word-2 {
+  --color-1: #e02421;
+  --color-2: #34c6da;
+  --color-3: #38d13f;
+  --color-4: #ACCFCB;
+}
+
+.title-word-3 {
+  --color-1: #ACCFCB;
+  --color-2: #a834a2;
+  --color-3: #ACCFCB;
+  --color-4: #d1d40b;
+}
+
+.title-word-4 {
+  --color-2: #64b81f;
+  --color-1: #3D8DAE;
+  --color-2: #DF8453;
+  --color-4: #e94e4b;
+}
+
+@keyframes color-animation {
+  0%    {color: var(--color-1)}
+  32%   {color: var(--color-2)}
+  33%   {color: var(--color-4)}
+  65%   {color: var(--color-3)}
+  66%   {color: var(--color-1)}
+  99%   {color: var(--color-4)}
+  100%  {color: var(--color-2)}
+}
