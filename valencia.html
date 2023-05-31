@@ -23,31 +23,51 @@
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Titan+One&display=swap');
+
     @import url('https://fonts.googleapis.com/css2?family=Allura&family=Bebas+Neue&family=Carter+One&family=Kaushan+Script&family=PT+Sans+Narrow&family=Roboto:wght@700&display=swap');
   </style>
 </head>
 <body>
   <div class="container-fluid justify-content-center text-center w3-flat-wet-asphalt py-2">
-    <h1 style="font-family: 'Carter One', cursive;"> 
-      <!-- <span class="title-word title-word-1 w3-wide">CHADA</span>&nbsp; 
-      <span class="title-word title-word-2 w3-wide">VALENCIA</span>  -->
-     <span style="color:#7660ce" class="title-word title-word-1">C</span>
-     <span style="color: #2B99FF" class="title-word title-word-2">H</span>
-     <span style="color:#2BFF8C" class="title-word title-word-3">A</span>
-     <span style="color: #FFFFFF;" class="title-word title-word-4">D</span>
-     <span style="color: #EEFF2B;" class="title-word title-word-1">A</span>&nbsp;
-     <span style="color: #FF5E2B;" class="title-word title-word-2">V</span>
-     <span style="color: #FB2BFF;" class="title-word title-word-3">A</span>
-     <span style="color: #2B73FF;" class="title-word title-word-4">L</span>
-     <span style="color: #2BE5FF;" class="title-word title-word-1">E</span>
-     <span style="color: #6FFF2B;" class="title-word title-word-2">N</span>
-     <span style="color: #BBFF2B;" class="title-word title-word-3">C</span>
-     <span style="color: #EEFF2B;" class="title-word title-word-4">I</span>
-     <span style="color: #FFD02B;" class="title-word title-word-1">A</span>
-    </h1>
+    <div class="row row-cols-1 p-0 m-0">
+      <div class="col col-sm-3 pt-2">
+        <div class="display-date">
+          <span id="day">day</span>,
+          <span id="daynum">00</span>
+          <span id="month">month</span>
+          <span id="year">0000</span>
+          <span class="display-time text-center"> </span>
+        </div>
+      </div>
+      <div class="col col-sm-6 p-0 m-0">
+        <h1 style="font-family: 'Carter One', cursive;"> 
+          <!-- <span class="title-word title-word-1 w3-wide">CHADA</span>&nbsp; 
+          <span class="title-word title-word-2 w3-wide">VALENCIA</span>  -->
+         <span style="color:#7660ce" class="title-word title-word-1">C</span>
+         <span style="color: #2B99FF" class="title-word title-word-2">H</span>
+         <span style="color:#2BFF8C" class="title-word title-word-3">A</span>
+         <span style="color: #FFFFFF;" class="title-word title-word-4">D</span>
+         <span style="color: #EEFF2B;" class="title-word title-word-1">A</span>&nbsp; <br>
+         <span style="color: #FF5E2B;" class="title-word title-word-2">V</span>
+         <span style="color: #FB2BFF;" class="title-word title-word-3">A</span>
+         <span style="color: #2B73FF;" class="title-word title-word-4">L</span>
+         <span style="color: #2BE5FF;" class="title-word title-word-1">E</span>
+         <span style="color: #6FFF2B;" class="title-word title-word-2">N</span>
+         <span style="color: #BBFF2B;" class="title-word title-word-3">C</span>
+         <span style="color: #EEFF2B;" class="title-word title-word-4">I</span>
+         <span style="color: #FFD02B;" class="title-word title-word-1">A</span>
+        </h1>
+      </div>
+      <div class="col col-sm-3 w3-hide-medium w3-hide-small">
+        <div id="ww_49232e95bc052" v='1.3' loc='auto' a='{"t":"horizontal","lang":"en","sl_lpl":1,"ids":[],"font":"Arial","sl_ics":"one_a","sl_sot":"celsius","cl_bkg":"#FFFFFF00","cl_font":"rgba(255,255,255,1)","cl_cloud":"#d4d4d4","cl_persp":"#2196F3","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722","el_nme":3,"el_whr":3}'><a href="https://weatherwidget.org/" id="ww_49232e95bc052_u" target="_blank">Widget weather</a></div><script async src="https://app1.weatherwidget.org/js/?id=ww_49232e95bc052"></script>
+    </div>
+    
+    
+    
     </div>
   </div>
-  <nav class="navbar navbar-expand-lg justify-content-center w3-flat-alizarin">
+  <nav class="navbar navbar-expand-lg justify-content-center" style="background: linear-gradient(to right, #fe8c00, #f83600);">
     <div class="container-fluid justify-content-center">
       <ul class="nav justify-content-center">
         <li class="nav-item">
@@ -82,7 +102,7 @@
         </div>
 
       </div>
-      <div class="col col-sm-8">
+      <div class="col col-sm-8 p-0 m-0">
         <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false">
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -112,22 +132,114 @@
 
   </div>
 
-<div class="container-fluid w3-metro-darken">
-  <div class="nav row row-cols-sm-4 justify-content-center text-center">
-    <div class="nav-item col col-sm-3 border-end border-white val-mid-nav"  style="padding-top: 5px;">
+<div class="container-fluid w3-metro-darken px-0 m-0">
+  <div class="nav row-cols-2 row-cols-sm-4 justify-content-center text-center p-0 m-0">
+    <div class="nav-item col col-sm-3  val-mid-nav px-0 m-0"  style="padding-top: 5px;">
       <h4 class="nav-link text-white">MAYOR'S OFFICE</h4>
     </div>
-    <div class="nav-item col col-sm-3 border-end border-white val-mid-nav"  style="padding-top: 5px;">
+    <div class="nav-item col col-sm-3  val-mid-nav px-0 m-0"  style="padding-top: 5px;">
       <h4 class="nav-link text-white">SERVICES</h4>
     </div>
-    <div class="nav-item col col-sm-3 border-end border-white val-mid-nav"  style="padding-top: 5px;">
+    <div class="nav-item col col-sm-3  val-mid-nav px-0 m-0"  style="padding-top: 5px;">
       <h4 class="nav-link text-white">PUBLIC NOTICES</h4>
     </div>
-    <div class="nav-item col col-sm-3 border-end border-white val-mid-nav"  style="padding-top: 5px;">
-      <h4 class="nav-link text-white">MUNICIPAL PROGRAMS</h4>
+    <div class="nav-item col col-sm-3 val-mid-nav px-0 m-0"  style="padding-top: 5px;">
+      <h4 class="nav-link text-white">PROGRAMS</h4>
     </div>
   </div>
 
 </div>
+
+<div class="container-fluid w3-flat-concrete">
+  <div class="row row-cols-1 p-2 p-sm-5 justify-content-center">
+    <div class="col col-sm-8 col-xl-4 p-2 p-sm-3 text-center">
+      <h1><img src="img/cargo.svg" alt="" width="150" height="150"></h1>
+      <h3 class="w3-wide w3-text-deep-purple fs-1" style="font-family: 'Passion One', cursive;">
+        ECONOMY
+      </h3>
+      <p class="w3-text-dark-gray fs-6">
+        Valencia, Negros Oriental is a municipality located in the Central Visayas region of the Philippines. Known for its picturesque landscapes and vibrant community, Valencia boasts a diverse and thriving economy. The municipality's economy is primarily driven by agriculture, tourism, and commerce.
+      </p>
+    </div>
+    <div class="col col-sm-8 col-xl-4 p-2 p-sm-3 text-center">
+      <h1><img src="img/plane.svg" alt="" width="150" height="150"></h1>
+      <h3 class="w3-wide w3-text-amber fs-1" style="font-family: 'Passion One', cursive;">
+        TOURISM
+      </h3>
+      <p class="w3-text-dark-gray fs-6">
+        Valencia's scenic beauty and natural attractions make it a popular tourist destination. The municipality is blessed with stunning waterfalls, lush forests, and serene mountain ranges, attracting both local and foreign visitors. The tourism industry in Valencia has seen significant growth in recent years, with the development of eco-tourism activities, adventure tourism, and nature-based attractions. Visitors can enjoy activities such as hiking, trekking, swimming in waterfalls, exploring caves, and experiencing the rich biodiversity of the region.
+      </p>
+    </div>
+    <div class="col col-sm-8 col-xl-4 p-2 p-sm-3 text-center">
+      <h1>
+        <img src="img/coconut.svg" alt="" width="150" height="150">
+      </h1>
+      <h3 class="w3-wide w3-text-lime fs-1" style="font-family: 'Passion One', cursive;">
+        AGRICULTURE
+      </h3>
+      <p class="w3-text-dark-gray fs-6">
+        Agriculture plays a significant role in Valencia's economy, with vast agricultural lands and favorable climate conditions. The fertile soil supports the cultivation of a wide range of crops, including sugarcane, rice, corn, coconut, and various fruits and vegetables. The agricultural sector not only provides livelihood opportunities for the local population but also contributes to the overall food security of the region.
+      </p>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  const displayTime = document.querySelector(".display-time");
+// Time
+function showTime() {
+  let time = new Date();
+  displayTime.innerText = time.toLocaleTimeString("en-US", { hour12: true });
+  setTimeout(showTime, 1000);
+}
+
+showTime();
+
+// Date
+function updateDate() {
+  let today = new Date();
+
+  // return number
+  let dayName = today.getDay(),
+    dayNum = today.getDate(),
+    month = today.getMonth(),
+    year = today.getFullYear();
+
+  const months = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
+  const dayWeek = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  // value -> ID of the html element
+  const IDCollection = ["day", "daynum", "month", "year"];
+  // return value array with number as a index
+  const val = [dayWeek[dayName], dayNum, months[month], year];
+  for (let i = 0; i < IDCollection.length; i++) {
+    document.getElementById(IDCollection[i]).firstChild.nodeValue = val[i];
+  }
+}
+
+updateDate();
+
+</script>
 </body>
 </html>
