@@ -1,0 +1,4 @@
+./update/Antihack.dll;fb5d11cc;1731072
+./update/Main.dll;fcee6970;2382336
+./update/Main.exe;ffbda577;3615232
+./update/main.premium;fc917028;1087716
